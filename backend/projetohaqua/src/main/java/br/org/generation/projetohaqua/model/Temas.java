@@ -21,12 +21,12 @@ public class Temas {
 	public long id;
 
 	@NotNull
-	@Size(max = 100, message = "A descrição deve ter no máximo 100 caracteres!")
-	public String descricao;
+	@Size(max = 50, message = "O nome deve ter no máximo 50 caracteres!")
+	public String nome;
 	
 	@NotNull
-	@Size(max = 100, message = "Máximo 100 caracteres!")
-	public String pesquisa;
+	@Size(max = 200, message = "A descrição deve ter no máximo 200 caracteres!")
+	public String descricao;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	public Date data_insercao = new java.sql.Date(System.currentTimeMillis());
@@ -47,20 +47,20 @@ public class Temas {
 		this.descricao = descricao;
 	}
 
-	public String getPesquisa() {
-		return pesquisa;
-	}
-
-	public void setPesquisa(String pesquisa) {
-		this.pesquisa = pesquisa;
-	}
-
 	public Date getData_insercao() {
 		return data_insercao;
 	}
 
 	public void setData_insercao(Date data_insercao) {
 		this.data_insercao = data_insercao;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	
