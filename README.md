@@ -3,7 +3,7 @@
 
 Projeto desenvolvido em SQUAD na Generation
 
-- [x] TASK 1 - 
+- [x] TASK 1 - Definir <a href="https://github.com/luisfsm/Projeto_Integrador/tree/master/Documentacao">escopo</a>
 - [x] TASK 2 -
 - [x] TASK 3 -
 - [x] TASK 4 -
