@@ -36,9 +36,14 @@ public class Postagem {
 	
 	private String recurso_url;
 	
-	//@ManyToOne
-	//@JsonIgnoreProperties("postagem")
-	//private Temas tema_id;
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Temas temas;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Usuario  usuarios;
+	
 	
 	public long getId() {
 		return id;
@@ -79,13 +84,21 @@ public class Postagem {
 	public void setRecurso_url(String recurso_url) {
 		this.recurso_url = recurso_url;
 	}
-/*
-	public Temas getTema_id() {
-		return tema_id;
+
+	public Temas getTemas() {
+		return temas;
 	}
 
-	public void setTema_id(Temas tema_id) {
-		this.tema_id = tema_id;
+	public void setTemas(Temas temas) {
+		this.temas = temas;
 	}
-	*/
+
+	public Usuario getUsuarios() {
+		return usuarios;
+	}
+
+	public void setUsuarios(Usuario usuarios) {
+		this.usuarios = usuarios;
+	}
+	
 }

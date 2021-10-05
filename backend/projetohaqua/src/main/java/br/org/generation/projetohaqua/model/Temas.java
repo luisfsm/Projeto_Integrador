@@ -36,9 +36,9 @@ public class Temas {
 	@Temporal(TemporalType.TIMESTAMP)
 	public Date data_insercao = new java.sql.Date(System.currentTimeMillis());
 
-	/*@OneToMany(mappedBy = "tema_id", cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("tema_id")
-	private List<Postagem> postagem;*/
+	@OneToMany(mappedBy = "temas", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("temas")
+	private List<Postagem> postagem;
 
 	public long getId() {
 		return id;
@@ -67,11 +67,12 @@ public class Temas {
 	public String getNome() {
 		return nome;
 	}
+	
 
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-/*
+
 	public List<Postagem> getPostagem() {
 		return postagem;
 	}
@@ -79,6 +80,6 @@ public class Temas {
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
 	}
-*/
+
 	
 }
