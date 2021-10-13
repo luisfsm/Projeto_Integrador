@@ -4,7 +4,7 @@
 Projeto desenvolvido em SQUAD na Generation
 
 - [x] TASK 1 - Definir <a href="https://github.com/luisfsm/Projeto_Integrador/tree/master/Documentacao">escopo</a>
-- [x] TASK 2 - Prototipando o Banco de dados
+- [x] TASK 2 - Prototipando <a href="https://github.com/luisfsm/Projeto_Integrador/blob/master/Documentacao/PROJETO_HAQUA-dbdesigner.pdf">Banco de dados </a>
 - [x] TASK 3 - Projeto Inicial Spring/Mysql
 - [x] TASK 4 - Construir Model Tema
 - [X] TASK 5 - CRUD da Model Tema (FindAll, FindById,Post,Put)
