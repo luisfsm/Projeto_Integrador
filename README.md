@@ -4,13 +4,13 @@
 Projeto desenvolvido em SQUAD na Generation
 
 - [x] TASK 1 - Definir <a href="https://github.com/luisfsm/Projeto_Integrador/tree/master/Documentacao">escopo</a>
-- [x] TASK 2 -
-- [x] TASK 3 -
-- [x] TASK 4 -
-- [X] TASK 5 -
-- [X] TASK 6 -
-- [ ]  TASK 7 -
-- [ ]  TASK 8 -
+- [x] TASK 2 - Prototipando o Banco de dados
+- [x] TASK 3 - Projeto Inicial Spring/Mysql
+- [x] TASK 4 - Construir Model Tema
+- [X] TASK 5 - CRUD da Model Tema (FindAll, FindById,Post,Put)
+- [X] TASK 6 - Construir Model Usuarios,Postagem, relacionar Models(Usuario -> Postagem, Tema->Postagem), CRUD da Model Postagem (FindAll, FindById,Post,Put)
+- [X] TASK 7 -  Spring Security
+- [ ] TASK 8 - Swagger, Deploy Heroku
 
 
 
