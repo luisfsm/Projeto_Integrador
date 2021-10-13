@@ -1,6 +1,7 @@
 package br.org.generation.projetohaqua.service;
 
 import java.nio.charset.Charset;
+import java.util.List;
 import java.util.Optional;
 
 import org.apache.commons.codec.binary.Base64;
@@ -16,37 +17,44 @@ import br.org.generation.projetohaqua.repository.UsuarioRepository;
 public class UsuarioService {
 
 	@Autowired
-	private UsuarioRepository repository;
+	private UsuarioRepository usuarioRepository;
+	
+	public List<Usuario> listarUsuarios(){
+		return usuarioRepository.findAll();
+	}
 
-	public Usuario CadastrarUsuario(Usuario usuario) {
-		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+	public Optional<Usuario> CadastrarUsuario(Usuario usuario) {
+		if(usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
+			return Optional.empty();
+				
+				BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
 		String senhaEncoder = encoder.encode(usuario.getSenha());
 		usuario.setSenha(senhaEncoder);
 
-		return repository.save(usuario);
+		return Optional.of(usuarioRepository.save(usuario));
 	}
 
-	public Optional<UsuarioLogin> Logar(Optional<UsuarioLogin> user) {
-
+	public Optional<UsuarioLogin> Logar(Optional<UsuarioLogin> userLogin) {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-		Optional<Usuario> usuario = repository.findByUsuario(user.get().getUsuario());
+		Optional<Usuario> usuario = usuarioRepository.findByUsuario(userLogin.get().getUsuario());
 
 		if (usuario.isPresent()) {
-			if (encoder.matches(user.get().getSenha(), usuario.get().getSenha())) {
+			if (encoder.matches(usuario.get().getSenha(), usuario.get().getSenha())) {
 
-				String auth = user.get().getUsuario() + ":" + user.get().getSenha();
-				byte[] encodedAuth = Base64.encodeBase64(auth.getBytes(Charset.forName("US-ASCII")));
-				String authHeader = "Basic " + new String(encodedAuth);
+				String auth = usuario.get().getUsuario() + ":" + usuario.get().getSenha();
+				byte[] encodeAuth = Base64.encodeBase64(auth.getBytes(Charset.forName("US-ASCII")));
+				String authHeader = "Basic " + new String(encodeAuth);
 
-				user.get().setToken(authHeader);
-				user.get().setNome(usuario.get().getNome());
-				user.get().setSenha(usuario.get().getSenha());
+				userLogin.get().setId(usuario.get().getId());
+				userLogin.get().setToken(authHeader);
+				userLogin.get().setSenha(usuario.get().getSenha());
+				userLogin.get().setNome(usuario.get().getNome());
 
-				return user;
-
+				return userLogin;
 			}
 		}
-		return null;
+
+		return Optional.empty();
 	}
 }
