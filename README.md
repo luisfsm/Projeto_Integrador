@@ -10,7 +10,7 @@ Projeto desenvolvido em SQUAD na Generation
 - [X] TASK 5 - CRUD da Model Tema (FindAll, FindById,Post,Put)
 - [X] TASK 6 - Construir Model Usuarios,Postagem, relacionar Models(Usuario -> Postagem, Tema->Postagem), CRUD da Model Postagem (FindAll, FindById,Post,Put)
 - [X] TASK 7 -  Spring Security
-- [ ] TASK 8 - Swagger, Deploy Heroku
+- [X] TASK 8 - Swagger, Deploy Heroku
 
 
 
