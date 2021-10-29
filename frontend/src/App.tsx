@@ -1,27 +1,11 @@
 import React from 'react';
+import Home from './pages/home/Home';
 
 
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <div style={{ minHeight: '100vh' }}>
-        <Route exact path='/'>
-            <Login />
-          </Route>
-          <Route path='/Login'>
-            <Login />
-          </Route>
-
-          <Route path='/home'>
-            <Home />
-          </Route>
-        </div>
-      </Switch>
-      <Footer />
-    </Router>
-  )
+    <Home />
+  );
 }
 export default App;
