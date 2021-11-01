@@ -1,80 +1,86 @@
-.paginalogin {
-  width: 500px;
-  padding: 4% 0 0;
-  margin: auto;
+.haquaLogo{
+  position: absolute;
+  width: 119px;
+  height: 111px;
+  left: 755px;
+  top: 150px;
+  border-radius: 0px;
 }
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
+
+.buttom{
+  position: absolute;
+  width: 172px;
+  height: 60px;
+  left: 772px;
+  top: 560px;
+
+}
+
+.retangulo1{
+  position: absolute;
+  width: 520px;
+  height: 70px;
+  left: 555px;
+  top: 300px;
+}
+
+.border{
+  background: #F1F1F1;
+  border: 2px solid #D0DCFB;
+  border-radius: 5px;
+}
+
+.recuperarSenha{
+  position: absolute;
+  width: 153px;
+  height: 18px;
+  left: 550px;
+  top: 460px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+color: #98C7E4;
+}
+
+.cadastrar{
+  position: absolute;
+  width: 186px;
+  height: 46px;
+  left: 727px;
+  top: 620px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  border-radius: 58px;
-}
-.form input {
-  outline: 0;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  text-transform: uppercase;
-  outline: 0;
-  margin-left: 298px;
-  background: #b2b4bb;
-  width: 10%;
-  height: 10%;
-  border: 0;
-  padding: 2px;
-  color: #000000;
-  font-size: 12px;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #2F4D9B;
-  color: white;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-}
-.form .message a {
-  color: #000000;
-  text-decoration: none;
+
+  color: #98C7E4;
 }
 
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
+.projetoHaqua{
+  position: absolute;
+  width: 135px;
+  height: 16px;
+  left: 752px;
+  top: 850px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #98C7E4;
 }
 
-body {
-  background: #2F4D9B;    
-}
-.text-decorator-none {
-  text-decoration: none;
-}
-
-.textoCadastro {
-  font-weight: bold !important;
-  color: #000000 !important;
-  
-}
-
-.logo {
-    background-image: url("https://i.imgur.com/ycjeb0X.png");
-}
-
-.titulo {
-  font-weight: bold!important;
-
+body{
+  background: #022A43;
 }
