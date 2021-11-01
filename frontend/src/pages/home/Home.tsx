@@ -9,6 +9,8 @@ import TextareaAutosize from '@mui/material/TextareaAutosize';
 function Home() {
     return (
         <>
+        
+        <div className='divWhite'>
             <Grid container p={3} direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={1} alignItems="center">
                     <img src="https://i.imgur.com/z0ttVob.png?1" alt="" className="igUserms" />
@@ -71,6 +73,7 @@ function Home() {
                     </Grid>
                 </Grid>
             </Grid>
+            </div>
         </>
     )
 }
