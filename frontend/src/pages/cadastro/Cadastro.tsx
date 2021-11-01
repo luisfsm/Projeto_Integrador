@@ -18,11 +18,11 @@ function Cadastro() {
                     <TextField id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                     <TextField id='senhacom' label='Confirme a senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                     <Box marginTop={2} textAlign='center'>
-
+                    <Link to='/home' className='text-decorator-none'>
                         <Button type='submit' variant='contained'>
                             Cadastrar
                         </Button>
-
+                    </Link>
                     </Box>
                 </form>
 

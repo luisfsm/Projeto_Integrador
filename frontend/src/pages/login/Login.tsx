@@ -16,16 +16,18 @@ function Login() {
                     <TextField id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                     <TextField id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                     <Box marginTop={2} textAlign='center'>
-
+                    <Link to='/home' className='text-decorator-none'>
                         <Button type='submit' variant='contained'>
                             Entrar
                         </Button>
-
+                    </Link>
                     </Box>
                 </form>
                 <Box marginTop={5}>
-
-                    <Typography variant='subtitle1' gutterBottom align='center' className='textoCadastro'>Clique aqui para se cadastrar.</Typography>
+                    
+                    <Link to="signup" className='text-decorator-none'> 
+                        <Typography variant='subtitle1' gutterBottom align='center' className='textoCadastro'>Clique aqui para se cadastrar.</Typography>
+                    </Link>
                 </Box>
 
             </div>
