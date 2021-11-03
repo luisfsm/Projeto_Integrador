@@ -1,16 +1,17 @@
-import { AppBar, Box, Toolbar, Typography } from '@material-ui/core'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { AppBar, Box, Toolbar, Typography } from '@material-ui/core';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
     return (
         <div>
-            <AppBar position="static">
+            <AppBar position="static" className="navcor">
                 <Toolbar variant="dense">
                     <Box className="cursor">
                         <Typography variant="h5" color="inherit" >
                             <Link to="/home">
-                                <img src="https://i.imgur.com/ycjeb0X.png" height="50px" />
+                                <img src="https://i.imgur.com/ycjeb0X.png" alt="logo" height="50px" />
                             </Link>
                         </Typography>
                     </Box>
@@ -30,12 +31,12 @@ function Navbar() {
                         </Box>
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" color="inherit">
-                                Cadastrar Postagem
+                                Nova Postagem
                             </Typography>
                         </Box>
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" color="inherit">
-                                Cadastrar Tema
+                                Novo Tema
                             </Typography>
                         </Box>
                     </Box>

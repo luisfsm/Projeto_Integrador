@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #2F4D9B;
+  background: #4669c4;
   color: white;
 }
 .form .message {
@@ -58,7 +58,7 @@
 }
 
 body {
-  background: #2F4D9B;    
+  background: #4669c4;    
 }
 .text-decorator-none {
   text-decoration: none;

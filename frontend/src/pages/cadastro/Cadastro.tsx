@@ -10,7 +10,7 @@ function Cadastro() {
             <div className="form">
                 <form>
 
-                    <img src="https://i.imgur.com/ycjeb0X.png" height="91px" />
+                    <img src="https://i.imgur.com/ycjeb0X.png" alt="logo" height="91px" />
 
                     <Typography variant='h4' gutterBottom color='textPrimary' component='h3' align='center' className='titulo'>Cadastrar</Typography>
                     <TextField id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth />

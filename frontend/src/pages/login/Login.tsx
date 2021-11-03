@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
+import { Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './Login.css';
 
@@ -10,7 +10,7 @@ function Login() {
             <div className="form">
                 <form>
 
-                    <img src="https://i.imgur.com/ycjeb0X.png" height="90px" />
+                    <img src="https://i.imgur.com/ycjeb0X.png" alt="logo" height="90px" />
 
                     <Typography variant='h4' gutterBottom color='textPrimary' component='h3' align='center' className='titulo'>Entrar</Typography>
                     <TextField id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
@@ -25,7 +25,7 @@ function Login() {
                 </form>
                 <Box marginTop={5}>
                     
-                    <Link to="signup" className='text-decorator-none'> 
+                    <Link to="/cadastrar" className='text-decorator-none'> 
                         <Typography variant='subtitle1' gutterBottom align='center' className='textoCadastro'>Clique aqui para se cadastrar.</Typography>
                     </Link>
                 </Box>

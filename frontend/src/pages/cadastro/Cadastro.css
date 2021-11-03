@@ -24,16 +24,16 @@
     font-size: 14px;
   }
   .form button {
-    text-transform: uppercase;
-    outline: 0;
-    margin-left: 275px;
+    text-transform: uppercase !important;
+    outline: 0 !important;
+    margin-left: 265px !important;
     background: #b2b4bb;
-    width: 25%;
-    height: 15%;
+    width: 25% !important;
+    height: 90% !important;
     border: 0;
     padding: 4px;
     color: #000000;
-    font-size: 12px;
+    font-size: 20px;
     cursor: pointer;
   }
   .form button:hover,.form button:active,.form button:focus {
@@ -58,7 +58,7 @@
   }
   
   body {
-    background: #2F4D9B;    
+    background: #4669c4;    
   }
   .text-decorator-none {
     text-decoration: none;
