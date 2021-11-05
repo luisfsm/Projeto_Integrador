@@ -11,7 +11,7 @@ function Navbar() {
                     <Box className="cursor">
                         <Typography variant="h5" color="inherit" >
                             <Link to="/home">
-                                <img src="https://i.imgur.com/ycjeb0X.png" alt="logo" height="50px" />
+                                <img src="https://i.imgur.com/EB2HE5Q.png" alt="logo" height="50px" />
                             </Link>
                         </Typography>
                     </Box>
@@ -39,6 +39,13 @@ function Navbar() {
                                 Novo Tema
                             </Typography>
                         </Box>
+                        <Link to="/login" className="text-decorator-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" color="inherit">
+                                Logout
+                            </Typography>
+                        </Box>
+                        </Link>
                     </Box>
                     <Box display="flex" justifyContent="flex-end" >
                     </Box>
