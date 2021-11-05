@@ -1,36 +1,25 @@
-.haquaLogo{
-  height: 161px;
-  width: 187px;
-  left: 20%;
-  margin-top: 15%;
-  border-radius: 0px;
-}
-.retanguloLogo{
-  background: #022A43;
+
+.background-cadastro{
+  background-color: #98C7E4 !important;
 }
 
-.border{
-  background: #F1F1F1;
-  border: 2px solid #D0DCFB;
-  border-radius: 10px;
+.retanguloCadastro{
+  background: #022A43 !important;
+  background-repeat: no-repeat !important;
+  width: 100vh;
+  height: 100vh;
+}
+.textCadastro{
+  color: #98C7E4 !important;
 }
 
-.retangulo4{
-  position: absolute;
-  width: 668px;
-  height: 86px;
-  left: 700px;
-  top: 170px;
+.inputBackGroudCadastro{
+  background-color: white !important;
+  border: 1px solid;
+  border-radius: 6px;
 }
 
-.buttom{
-  position: absolute;
-  width: 172px;
-  height: 60px;
-  left: 850px;
-  top: 520px;
-}
 
-.label {
-  width: 400px;
+.logoCadastro{
+  margin-left: 10px;
 }
