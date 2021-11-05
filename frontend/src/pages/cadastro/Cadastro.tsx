@@ -8,7 +8,7 @@ function Cadastro() {
     return (
         <div>
             <Grid container>
-                <Grid xs={6}>
+                <Grid xs={6} className="retanguloLogo">
                     <Box display="flex" alignItems="center" justifyContent="center">
                         <img src="https://i.imgur.com/ycjeb0X.png" className="haquaLogo" alt="" />
                     </Box>

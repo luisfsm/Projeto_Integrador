@@ -1,38 +1,49 @@
-.posts{
-    background-color: #B1D4D4;
-    width:  551px;
-    height: 178px;
-    border-radius: 3%;
+body{
+    background: #022A43 !important;
+    background-repeat: no-repeat !important;
+}
+.retanguloHome{
+    background: #98C7E4 !important;
+    background-repeat: no-repeat !important;
+    width: 100vh;
+    height: 100vh;
+}
+.textHome{
+    font-size: 40px !important;
+    color: white;
 }
 
-.imgPosts{
-    width: 150px;
-    height: 150px;
-    border-radius: 3%;
+.iconHome{
+    width: 40px !important;
+    height:30px !important;
 }
 
-.posts-users{
-    background-color: #B1D4D4;
-    width:  551px !important;
-    height: 178px !important;
-    border-radius: 3%;
-}
 .textarea {
     resize: none;
     margin-bottom: 1rem;
-    color: #1da1f2;
-    background-color: #DED9D9;
-    width:  551px;
-    height: 178px;
+    color: black;
+    background-color: #D0DCFB;
+    width:  600px !important;
+    height: 100px !important;
+    border-color: #D0DCFB;
     
 }
 
-.igUserms{
-    width: 50px;
-    height: 50px;
+.p-5-home{
+    padding-top: 50px;
 }
 
-.button{
-    background-color: #C4C4C4 !important;
-    color: black !important;
+.iconUsersHome{
+    width: 60px !important;
+    height: 60px !important;
+    color: #D0DCFB;
+    padding: 20px;
+}
+
+.btnHome{
+    background-color: #98C7E4;
+    color: azure;
+}
+.logoHomePost{
+    color: white;
 }

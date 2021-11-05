@@ -1,73 +1,60 @@
 import React from 'react';
 import { Box, Grid, Button, Typography } from '@mui/material';
 import './Home.css';
-
-import './Home.css';
+import HomeSharpIcon from '@mui/icons-material/HomeSharp';
+import HealingSharpIcon from '@mui/icons-material/HealingSharp';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AttachFileIcon from '@mui/icons-material/AttachFile';
 
 
 function Home() {
     return (
         <>
-            <Grid container p={3} direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={1} alignItems="center">
-                    <img src="https://i.imgur.com/z0ttVob.png?1" alt="" className="igUserms" />
-                </Grid>
-                <Grid item xs={8}>
-                    <TextareaAutosize
-                        aria-label="minimum height"
-                        minRows={8}
-                        placeholder="Faça um post"
-                        id="textarea"
-                        className="textarea"
-                    />
-                    <Box marginTop={2} textAlign="center">
-                        <Button className="button">
-                            Postar
-                        </Button>
-
+            <Grid container xs={12} display="flex" flexWrap="wrap">
+                <Grid item xs={3} display="flex" direction="row" className="retanguloHome" justifyContent="center">
+                    <Box className="LogoHome" alignItems="center" flexDirection="column" >
+                        <Box>
+                            <img src="https://i.imgur.com/EB2HE5Q.png" alt="logo" className="logoHome" width="250px" height="250px" />
+                        </Box>
+                        <Box>
+                            <Typography className="textHome" alignItems="center"> <HomeSharpIcon className="iconHome" /> Home</Typography>
+                        </Box>
+                        <Box>
+                            <Typography className="textHome" alignItems="center"><HealingSharpIcon className="iconHome" /> Temas</Typography>
+                        </Box>
                     </Box>
                 </Grid>
-            </Grid>
+                <Grid item xs={6} className="p-5-home" display="flex" direction="row" >
+                    <Box display="flex" >
+                        <Box>
+                            <AccountCircleIcon className="iconUsersHome" />
+                        </Box>
+                        <Box>
+                            <TextareaAutosize
+                                maxRows={4}
+                                aria-label="maximum height"
+                                placeholder="Poste alguma coisa"
+                                defaultValue=""
+                                style={{ width: 200 }}
 
-            <Grid container p={3} direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={1}>
-                    <img src="https://i.imgur.com/z0ttVob.png?1" alt="" className="igUserms" />
-                </Grid>
-                <Grid item xs={8}>
-                    <Grid container className="posts-users" justifyContent="start" alignItems="center" p={2}>
-                        <Grid item xs={4} >
-                            <img src="https://i.imgur.com/BJLi3aC.jpg?1" alt="" className="imgPosts" />
-                        </Grid>
-                        <Grid item xs={5} alignItems="center" alignContent="flex-end" >
-                            <Box>
-                                <Typography>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, veritatis repellat commodi cumque asperiores ipsadadas eritatis repellat commodi cumque asperiores 
+                                className="textarea"
+                            />
 
-                                </Typography>
+                            <Box display="flex" justifyContent="flex-start">
+                                <AttachFileIcon className="logoHomePost" />
                             </Box>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </Grid>
-            <Grid container p={3} direction="row" justifyContent="center" alignItems="center">
-                <Grid item xs={1}>
-                    <img src="https://i.imgur.com/z0ttVob.png?1" alt="" className="igUserms" />
-                </Grid>
-                <Grid item xs={8}>
-                    <Grid container className="posts-users" justifyContent="start" alignItems="center" p={2}>
-                        <Grid item xs={4} >
-                            <img src="https://i.imgur.com/BJLi3aC.jpg?1" alt="" className="imgPosts" />
-                        </Grid>
-                        <Grid item xs={5} alignItems="center" alignContent="flex-end" >
-                            <Box>
-                                <Typography>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, veritatis repellat commodi cumque asperiores ipsa
-                                </Typography>
+                            <Box display="flex" justifyContent="flex-end">
+                                <Button className="btnHome" variant="contained">Postar</Button>
                             </Box>
-                        </Grid>
-                    </Grid>
+                        </Box>
+                    </Box>
                 </Grid>
+
+                <Grid item xs={3} >
+
+                </Grid>
+
             </Grid>
         </>
     )
