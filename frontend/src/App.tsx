@@ -7,7 +7,7 @@ import Navbar from './components/estaticos/navbar/Navbar';
 
 function App() {
   return (
-    <Home />
+    <Cadastro />
   )
 }
 export default App;
