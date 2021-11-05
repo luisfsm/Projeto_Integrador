@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState,useEffect,ChangeEvent} from 'react';
 import { Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './Cadastro.css';
+import { useHistory } from 'react-router-dom';
 
 function Cadastro() {
-
     return (
         <div className="cadastromenu">
             <div className="form">
