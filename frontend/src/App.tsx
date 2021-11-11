@@ -5,6 +5,8 @@ import Login from './pages/login/Login';
 import Footer from './components/estaticos/footer/Footer';
 import Home from './pages/home/Home';
 import Navbar from './components/estaticos/navbar/Navbar';
+import Sobre from './pages/sobre/Sobre';
+import Donate from './pages/donate/Donate';
 
 
 
@@ -28,6 +30,14 @@ function App() {
             </Route>
             <Route path='/cadastrar'>
               <Cadastro />
+            </Route>
+
+            <Route path='/sobre'>
+              <Sobre />
+            </Route>
+
+            <Route path='/donate'>
+              <Donate />
             </Route>
           </div>
         </Switch>
