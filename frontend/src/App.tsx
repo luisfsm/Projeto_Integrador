@@ -8,6 +8,9 @@ import Navbar from './components/estaticos/navbar/Navbar';
 import ListarPostagem from './components/postagens/listarPostagem/ListarPostagem';
 import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPostagem';
 
+import Sobre from './pages/sobre/Sobre';
+
+
 
 
 function App() {
@@ -47,8 +50,7 @@ function App() {
 
         </div>
       </Switch>
-      <Footer />
-    </Router>
+
   )
 }
 export default App;
