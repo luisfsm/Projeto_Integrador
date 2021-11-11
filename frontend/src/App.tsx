@@ -9,6 +9,8 @@ import ListarPostagem from './components/postagens/listarPostagem/ListarPostagem
 import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPostagem';
 
 import Sobre from './pages/sobre/Sobre';
+import ListaTema from './components/temas/listarTema/ListarTema';
+import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 
 
 
@@ -47,10 +49,20 @@ function App() {
           <Route exact path='/formularioPostagem/:id'>
             <CadastroPostagem />
           </Route>
+          <Route path='/temas'>
+            <ListaTema />
+          </Route>
+          <Route exact path='/formularioTema'>
+            <CadastroTema />
+          </Route>
+          <Route exact path='/formularioTema/:id'>
+            <CadastroTema />
+          </Route>
 
         </div>
       </Switch>
-
+      
+    </Router>
   )
 }
 export default App;

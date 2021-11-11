@@ -9,8 +9,8 @@ function Navbar() {
 
     const [token, setToken] = useLocalStorage('token');
     let history = useHistory();
-    
-    function goLogout(){
+
+    function goLogout() {
         setToken('')
         alert("Usuário deslogado")
         history.push('/login')
@@ -41,11 +41,13 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Temas
-                            </Typography>
-                        </Box>
+                        <Link to="/temas" className='text-decorator-none'>
+                            <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Temas
+                                </Typography>
+                            </Box>
+                        </Link>
                         <Link to="/formularioPostagem" className="text-decorator-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit">
@@ -59,11 +61,11 @@ function Navbar() {
                             </Typography>
                         </Box>
                         <Link to="/login" className="text-decorator-none">
-                        <Box mx={1} className="cursor" onClick={goLogout}>
-                            <Typography variant="h6" color="inherit">
-                                Logout
-                            </Typography>
-                        </Box>
+                            <Box mx={1} className="cursor" onClick={goLogout}>
+                                <Typography variant="h6" color="inherit">
+                                    Logout
+                                </Typography>
+                            </Box>
                         </Link>
                     </Box>
                     <Box display="flex" justifyContent="flex-end" >
