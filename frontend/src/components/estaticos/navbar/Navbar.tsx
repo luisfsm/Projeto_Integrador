@@ -9,8 +9,8 @@ function Navbar() {
 
     const [token, setToken] = useLocalStorage('token');
     let history = useHistory();
-    
-    function goLogout(){
+
+    function goLogout() {
         setToken('')
         alert("Usuário deslogado")
         history.push('/login')
@@ -34,39 +34,52 @@ function Navbar() {
                     <Box display="flex" justifyContent="center">
                         <Box mx={1} className="cursor">
                         </Box>
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Postagens
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Temas
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Nova Postagem
-                            </Typography>
-                        </Box>
+                        <Link to='/postagens' className='text-decorator-none'>
+                            <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Postagens
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        <Link to="/temas" className='text-decorator-none'>
+                            <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Temas
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        <Link to="/formularioPostagem" className="text-decorator-none">
+                            <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Nova Postagem
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        <Link to="/formularioTema" className="text-decorator-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" color="inherit">
                                 Novo Tema
                             </Typography>
                         </Box>
-                        <Link to="/login" className="text-decorator-none">
+                    </Link>
+
+                    <Link to="/login" className="text-decorator-none">
                         <Box mx={1} className="cursor" onClick={goLogout}>
                             <Typography variant="h6" color="inherit">
                                 Logout
                             </Typography>
                         </Box>
-                        </Link>
-                    </Box>
-                    <Box display="flex" justifyContent="flex-end" >
-                    </Box>
-                </Toolbar>
-            </AppBar>
-        </div>
+                    </Link>
+
+                </Box>
+                <Box display="flex" justifyContent="flex-end" >
+                </Box>
+            </Toolbar>
+        </AppBar>
+        </div >
     )
 }
 
