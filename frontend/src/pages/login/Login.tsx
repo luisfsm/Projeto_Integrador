@@ -47,35 +47,38 @@ function Login() {
     }
 
     return (
-        <div className="paginalogin">
-            <div className="form">
-            <form onSubmit={onSubmit}>
-
-                    <img src="https://i.imgur.com/ycjeb0X.png" alt="logo" height="90px" />
-
-                    <Typography variant='h4' gutterBottom color='textPrimary' component='h3' align='center' className='titulo'>Entrar</Typography>
-
-                    <TextField value={userLogin.usuario}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-
-                    <TextField value={userLogin.senha}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                        
-                    <Box marginTop={2} textAlign='center'>
-                        <Button type='submit' variant='contained'>
-                            Entrar
-                        </Button>
+        <>
+            <Grid container direction='row' justifyContent='center' alignItems='center'>
+                <Grid alignItems='center' xs={4}>
+                    <Box display="flex" justifyContent="center">
+                        <img src="https://i.imgur.com/ycjeb0X.png" className="haquaLogoHome" alt="" />
                     </Box>
-                </form>
-                <Box marginTop={5}>
-                    
-                    <Link to="/cadastrar" className='text-decorator-none'> 
-                        <Typography variant='subtitle1' gutterBottom align='center' className='textoCadastro'>Clique aqui para se cadastrar.</Typography>
-                    </Link>
-                </Box>
+                    <Box>
+                        <form onSubmit={onSubmit}>
+                            <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}  id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth className="border" />
+                            <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth className="border" />
+                            <Box>
+                                <Typography variant='subtitle1' className="recuperarSenha" gutterBottom>Recuperar senha</Typography>
+                            </Box>
 
-            </div>
-        </div>
+                            <Box display="flex" alignItems="center" justifyContent="center" marginTop={2}>
+                                <Button type='submit' variant='contained' color="primary" >
+                                    Entrar
+                                </Button>
+                            </Box>
+
+                            <Link to="/cadastrar" className='text-decorator-none'>
+                            <Box marginTop={2}>
+                                <Typography variant='subtitle1' gutterBottom className="cadastrar" align='center'>Não tem uma conta? Cadastre-se!</Typography>
+                            </Box>
+                            </Link>
+
+                            
+                        </form>
+                    </Box>
+                </Grid>
+            </Grid>
+        </>
     );
 }
 
