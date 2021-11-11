@@ -1,0 +1,17 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.btnTema{
+    background-color: #3a5668;
+    color: azure;
+}
+
+.ListTema{
+    background-color: #0a3753 ;
+}
+
+
+.idTema{
+    color: rgb(63, 61, 65);
+}
