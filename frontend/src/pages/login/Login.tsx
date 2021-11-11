@@ -49,8 +49,8 @@ function Login() {
     return (
         <>
             <Grid container direction='row' justifyContent='center' alignItems='center'>
-                <Grid alignItems='center' xs={4}>
-                    <Box display="flex" justifyContent="center">
+                <Grid alignItems='center' xs={4} >
+                    <Box display="flex" justifyContent="center" marginTop={6}>
                         <img src="https://i.imgur.com/ycjeb0X.png" className="haquaLogoHome" alt="" />
                     </Box>
                     <Box>
@@ -71,9 +71,7 @@ function Login() {
                             <Box marginTop={2}>
                                 <Typography variant='subtitle1' gutterBottom className="cadastrar" align='center'>Não tem uma conta? Cadastre-se!</Typography>
                             </Box>
-                            </Link>
-
-                            
+                            </Link>              
                         </form>
                     </Box>
                 </Grid>
