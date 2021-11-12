@@ -4,7 +4,7 @@ interface Postagem{
     id: number;
     titulo: string;
     texto: string;
-    tema?: Tema | null;
+    temas?: Tema | null;
 }
 
 export default Postagem;

@@ -3,10 +3,9 @@ body{
     background-repeat: no-repeat !important;
 }
 .retanguloHome{
-    background: #98C7E4 !important;
+    background: #1F587B !important;
     background-repeat: no-repeat !important;
-    width: 100vh;
-    height: 100vh;
+    
 }
 .textHome{
     font-size: 40px !important;
@@ -26,7 +25,7 @@ body{
     width:  600px !important;
     height: 100px !important;
     border-color: #D0DCFB;
-    
+
 }
 
 .p-5-home{

@@ -26,20 +26,20 @@ function CadastroPostagem() {
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
-            nome: "i",
+            nome: '',
             descricao: ''
         })
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
         texto: '',
-        tema: null
+        temas: null
     })
 
     useEffect(() => {
         setPostagem({
             ...postagem,
-            tema: tema
+            temas: tema
         })
     }, [tema])
 
@@ -71,7 +71,7 @@ function CadastroPostagem() {
         setPostagem({
             ...postagem,
             [e.target.name]: e.target.value,
-            tema: tema
+            temas: tema
         })
 
     }
@@ -107,7 +107,7 @@ function CadastroPostagem() {
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
-                        onChange={(e) => buscaId(`/tema/${e.target.value}`, setTema, {
+                        onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {
                             headers: {
                                 'Authorization': token
                             }

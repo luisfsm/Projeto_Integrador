@@ -21,7 +21,7 @@ function Navbar() {
 
 
         <div>
-            <AppBar position="static" className="navcor">
+            <AppBar position="fixed" className="navcor">
                 <Toolbar variant="dense">
                     <Box className="cursor">
                         <Typography variant="h5" color="inherit" >
