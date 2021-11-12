@@ -24,7 +24,7 @@ function Home() {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={8} justifyContent="center">
+                    <Grid item xs={8} justifyContent="flex-end">
                         <ListarPostagem />
                 
 

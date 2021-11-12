@@ -58,6 +58,9 @@ function App() {
           <Route exact path='/formularioTema/:id'>
             <CadastroTema />
           </Route>
+          <Route exact path='/sobre'>
+            <Sobre />
+          </Route>
 
         </div>
       </Switch>

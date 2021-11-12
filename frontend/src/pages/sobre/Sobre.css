@@ -1,4 +1,28 @@
-.item {
-    width: 100%;
-    height: 100%;
+
+
+
+
+  .textoSobre{
+    text-align: justify;
+  }
+
+  .fotos{
+    padding: 50px !important; 
+    margin: 50px !important;
+  }
+
+  .lbotao{
+    size:small;
+    background-color: white  !important;
+    color: rgb(28, 36, 143) !important;
+}
+
+.gbotao{
+    size:small;
+    background-color: rgb(49, 45, 45)  !important;
+    color: white !important;
+}
+
+.imgSobre{
+    margin-left: 600px;
 }
