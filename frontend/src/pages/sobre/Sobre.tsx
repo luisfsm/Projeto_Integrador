@@ -18,7 +18,9 @@ function sobre() {
 
                 </Grid >
                 <Grid item xs={6} justifyContent="flex-end">
-                    <img src="https://imgur.com/T2mcAYc.png" alt="" width="440px" height="450px" />
+                    <Box padding={5} className='imgSobre'>
+                        <img src="https://imgur.com/T2mcAYc.png" alt="" width="440px" height="450px" />
+                    </Box>
                 </Grid>
 
                 
