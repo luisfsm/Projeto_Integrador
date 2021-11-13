@@ -3,17 +3,16 @@ import { Box, Grid, Button, Typography } from '@mui/material';
 import './Home.css';
 import HomeSharpIcon from '@mui/icons-material/HomeSharp';
 import HealingSharpIcon from '@mui/icons-material/HealingSharp';
-import TextareaAutosize from '@mui/material/TextareaAutosize';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
+import CadastroPostagem from '../../components/postagens/cadastroPostagem/CadastroPostagem';
+import ListarPostagem from '../../components/postagens/listarPostagem/ListarPostagem';
 
 
 function Home() {
     return (
         <>
-            <Grid container xs={12} display="flex" flexWrap="wrap">
-                <Grid item xs={3} display="flex" direction="row" className="retanguloHome" justifyContent="center">
-                    <Box className="LogoHome" alignItems="center" flexDirection="column" >
+            <Grid container>
+                <Grid item xs={2} className="retanguloHome" justifyContent="center">
+                    <Box className="LogoHome logoTop" alignItems="center" flexDirection="column" position="fixed">
                         <Box>
                             <img src="https://i.imgur.com/EB2HE5Q.png" alt="logo" className="logoHome" width="250px" height="250px" />
                         </Box>
@@ -25,35 +24,23 @@ function Home() {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid item xs={6} className="p-5-home" display="flex" direction="row" >
-                    <Box display="flex" >
-                        <Box>
-                            <AccountCircleIcon className="iconUsersHome" />
+
+                <Grid item xs={8} justifyContent="center">
+                    <Box paddingY={10}>
+                        <Box className="cadastroPadding">
+                            <CadastroPostagem />
                         </Box>
-                        <Box>
-                            <TextareaAutosize
-                                maxRows={4}
-                                aria-label="maximum height"
-                                placeholder="Poste alguma coisa"
-                                defaultValue=""
-                                style={{ width: 200 }}
-
-                                className="textarea"
-                            />
-
-                            <Box display="flex" justifyContent="flex-start">
-                                <AttachFileIcon className="logoHomePost" />
-                            </Box>
-                            <Box display="flex" justifyContent="flex-end">
-                                <Button className="btnHome" variant="contained">Postar</Button>
-                            </Box>
+                        <Box className="listPostPadding">
+                            <ListarPostagem />
                         </Box>
                     </Box>
                 </Grid>
 
-                <Grid item xs={3} >
+                <Grid item xs={2}>
 
                 </Grid>
+
+
 
             </Grid>
         </>

@@ -4,7 +4,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
-import { busca, buscaId, post, put } from '../../../services/Service';
+import { busca, buscaId, post } from '../../../services/Service';
 
 import './CadastroPostagem.css';
 
@@ -26,19 +26,20 @@ function CadastroPostagem() {
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
+            nome: '',
             descricao: ''
         })
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
         texto: '',
-        tema: null
+        temas: null
     })
 
     useEffect(() => {
         setPostagem({
             ...postagem,
-            tema: tema
+            temas: tema
         })
     }, [tema])
 
@@ -70,7 +71,7 @@ function CadastroPostagem() {
         setPostagem({
             ...postagem,
             [e.target.name]: e.target.value,
-            tema: tema
+            temas: tema
         })
 
     }
@@ -97,8 +98,10 @@ function CadastroPostagem() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
-                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
+                <Typography variant="h3" color="textPrimary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
+
+                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" color="primary" margin="normal" fullWidth />
+
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
@@ -106,7 +109,7 @@ function CadastroPostagem() {
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
-                        onChange={(e) => buscaId(`/tema/${e.target.value}`, setTema, {
+                        onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {
                             headers: {
                                 'Authorization': token
                             }

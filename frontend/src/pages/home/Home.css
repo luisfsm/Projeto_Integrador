@@ -3,13 +3,13 @@ body{
     background-repeat: no-repeat !important;
 }
 .retanguloHome{
-    background: #98C7E4 !important;
+    background: #1F587B !important;
     background-repeat: no-repeat !important;
-    width: 100vh;
-    height: 100vh;
 }
+
 .textHome{
-    font-size: 40px !important;
+    padding-left: 18%;
+    font-size: 30px !important;
     color: white;
 }
 
@@ -26,7 +26,6 @@ body{
     width:  600px !important;
     height: 100px !important;
     border-color: #D0DCFB;
-    
 }
 
 .p-5-home{
@@ -44,6 +43,29 @@ body{
     background-color: #98C7E4;
     color: azure;
 }
+
 .logoHomePost{
     color: white;
+}
+
+.cadastroPadding{
+    padding-right: 20%;
+}
+
+.listPostPadding{
+    padding-left: 10%;
+    padding-right: 5%;
+    width: 70% !important;
+}
+
+.listPostColor{
+    background-color: #98C7E4;
+}
+
+.BoxWidth{
+    width: 300px !important;
+}
+
+.logoTop{
+    margin-top: 5%;
 }
