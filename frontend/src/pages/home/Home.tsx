@@ -16,6 +16,7 @@ function Home() {
                         <Box>
                             <img src="https://i.imgur.com/EB2HE5Q.png" alt="logo" className="logoHome" width="250px" height="250px" />
                         </Box>
+
                         <Box>
                             <Typography className="textHome" alignItems="center"> <HomeSharpIcon className="iconHome" /> Home</Typography>
                         </Box>
@@ -24,6 +25,18 @@ function Home() {
                         </Box>
                     </Box>
                 </Grid>
+
+                    </Grid>
+                    <Grid item xs={8} justifyContent="flex-end">
+                        <ListarPostagem />
+                
+
+
+                    </Grid>
+                    <Grid item xs={2}>
+
+                    </Grid>
+
 
                 <Grid item xs={8} justifyContent="center">
                     <Box paddingY={10}>

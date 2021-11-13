@@ -76,12 +76,27 @@ function Navbar() {
                             </Box>
                         </Link>
 
+
                     </Box>
                         <Box display="flex" justifyContent="flex-end" >
                     </Box>
                     
                 </Toolbar>
             </AppBar>
+
+                    <Link to="/sobre" className="text-decorator-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" color="inherit">
+                                Sobre nós
+                            </Typography>
+                        </Box>
+                    </Link>
+
+                </Box>
+                <Box display="flex" justifyContent="flex-end" >
+                </Box>
+            </Toolbar>
+        </AppBar>
         </div >
     )
 }
