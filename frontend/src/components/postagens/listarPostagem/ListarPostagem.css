@@ -5,27 +5,27 @@
 .tituloPostagem {
     color: rgb(14, 8, 34) !important;
     font-weight: bold !important;
-    font-size: 30px !important;
+    font-size: 23px !important;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
 }
 
 .textoPostagem {
     color: black !important;
-    font-size: 20px !important;
+    font-size: 15px !important;
 }
 
 .textoTema {
     color: rgb(75, 72, 72) !important;
     font-weight: bold !important;
     font-size: 15px !important;
-    margin-left: 590px !important;
+    margin-left: 68% !important;
 }
 
 .abotao{
-size: small;
-background-color: rgb(17, 87, 110) !important;
-color: white !important;
-margin-left: 640px !important;
+    size: small;
+    background-color: rgb(17, 87, 110) !important;
+    color: white !important;
+    margin-left: 400px !important;
 }
 
 .ebotao{
@@ -35,8 +35,7 @@ margin-left: 640px !important;
 }
 
 .cardColor{
-    background-color: rgb(164, 218, 210) !important;
-    border-radius: 20px !important;
-    width: 900px !important;
+    background-color: #98C7E4 !important;
+    border-radius: 5px !important;
     border-color: rgb(43, 43, 63) !important;
 }

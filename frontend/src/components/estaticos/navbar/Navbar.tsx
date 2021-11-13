@@ -21,8 +21,8 @@ function Navbar() {
 
 
         <div>
-            <AppBar position="fixed" className="navcor">
-                <Toolbar variant="dense">
+            <AppBar position="fixed" className="navcor div">
+                <Toolbar variant="regular">
                     <Box className="cursor">
                         <Typography variant="h5" color="inherit" >
                             <Link to="/home">
@@ -31,9 +31,11 @@ function Navbar() {
                         </Typography>
                     </Box>
 
-                    <Box display="flex" justifyContent="center">
+                    <Box display="flex">
+
                         <Box mx={1} className="cursor">
                         </Box>
+
                         <Link to='/postagens' className='text-decorator-none'>
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit">
@@ -59,26 +61,27 @@ function Navbar() {
                         </Link>
 
                         <Link to="/formularioTema" className="text-decorator-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Novo Tema
-                            </Typography>
-                        </Box>
-                    </Link>
+                            <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Novo Tema
+                                </Typography>
+                            </Box>
+                        </Link>
 
-                    <Link to="/login" className="text-decorator-none">
-                        <Box mx={1} className="cursor" onClick={goLogout}>
-                            <Typography variant="h6" color="inherit">
-                                Logout
-                            </Typography>
-                        </Box>
-                    </Link>
+                        <Link to="/login" className="text-decorator-none">
+                            <Box mx={1} className="cursor" onClick={goLogout}>
+                                <Typography variant="h6" color="inherit">
+                                    Logout
+                                </Typography>
+                            </Box>
+                        </Link>
 
-                </Box>
-                <Box display="flex" justifyContent="flex-end" >
-                </Box>
-            </Toolbar>
-        </AppBar>
+                    </Box>
+                        <Box display="flex" justifyContent="flex-end" >
+                    </Box>
+                    
+                </Toolbar>
+            </AppBar>
         </div >
     )
 }

@@ -40,23 +40,25 @@ function ListarPostagem() {
         <>
             {
                 posts.map(post => (
-                    <Box m={2} padding={1} >
+                    <Box m={2} padding={2}>
+
                         <Card variant="outlined" className="cardColor">
                             <CardContent>
                             <Typography variant="body2" component="p" className="textoTema">
                                    Tema - {post.temas?.descricao}
-
                                 </Typography>
+
                                 <Typography variant="h5" component="h2" className="tituloPostagem">
                                     {post.titulo}
                                 </Typography>
+
                                 <Typography variant="body2" component="p" className="textoPostagem">
                                     {post.texto}
                                 </Typography>
                             </CardContent>
+
                             <CardActions>
                                 <Box display="flex" justifyContent="center" mb={1.5}>
-
                                     <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                                         <Box mx={1}>
                                             <Button variant="contained" className="abotao"  >
@@ -73,6 +75,7 @@ function ListarPostagem() {
                                     </Link>
                                 </Box>
                             </CardActions>
+
                         </Card>
                     </Box>
                 ))

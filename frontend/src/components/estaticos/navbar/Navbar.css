@@ -8,6 +8,17 @@
     text-decoration: none;
 }
 
-.navcor {
-    background-color: #2F4D9B !important;
+.navcor{
+    padding-left: 25%;
+    background-color: #022A43 !important;
+}
+
+.div {
+    border-style: double;
+    border-width: 1px;  
+    border-color: #98C7E4;
+}
+
+.spaceAround{
+    justify-content: space-around !important;
 }
