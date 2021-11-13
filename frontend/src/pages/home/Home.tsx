@@ -35,12 +35,14 @@ function Home() {
                         </Box>
                     </Box>
                 </Grid>
+                <Grid item xs={8} justifyContent="center">
+                    <ListarPostagem />
+
+                </Grid>
 
                 <Grid item xs={2}>
 
                 </Grid>
-
-
 
             </Grid>
         </>
