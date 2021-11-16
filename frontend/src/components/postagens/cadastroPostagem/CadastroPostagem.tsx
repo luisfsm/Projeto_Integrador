@@ -4,7 +4,8 @@ import { useHistory, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
-import { busca, buscaId, post } from '../../../services/Service';
+import { busca, buscaId, post, put} from '../../../services/Service';
+
 
 import './CadastroPostagem.css';
 
@@ -80,6 +81,11 @@ function CadastroPostagem() {
         e.preventDefault()
 
         if (id == undefined) {
+            put(`/postagens`, postagem, setPostagem, {
+                headers: {
+                    'Authorization': token
+                }
+            })
             post(`/postagens`, postagem, setPostagem, {
                 headers: {
                     'Authorization': token

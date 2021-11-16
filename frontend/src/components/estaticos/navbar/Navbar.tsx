@@ -6,7 +6,6 @@ import './Navbar.css';
 
 function Navbar() {
 
-
     const [token, setToken] = useLocalStorage('token');
     let history = useHistory();
 
@@ -17,16 +16,13 @@ function Navbar() {
     }
     return (
 
-
-
-
         <div>
             <AppBar position="fixed" className="navcor div">
                 <Toolbar variant="regular">
                     <Box className="cursor">
                         <Typography variant="h5" color="inherit" >
                             <Link to="/home">
-                                <img src="https://i.imgur.com/EB2HE5Q.png" alt="logo" height="50px" />
+                                <img src="https://i.imgur.com/FpzQD5k.png" alt="logo" height="50px" />
                             </Link>
                         </Typography>
                     </Box>
