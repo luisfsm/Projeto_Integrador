@@ -47,6 +47,9 @@ function App() {
             <ListarPostagem />
           </Route>
 
+
+          
+
           <Route exact path='/formularioPostagem'>
             <CadastroPostagem />
           </Route>

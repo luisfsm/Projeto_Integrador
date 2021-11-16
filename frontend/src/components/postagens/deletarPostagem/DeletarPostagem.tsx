@@ -6,6 +6,8 @@ import Postagem from '../../../models/Postagem';
 import { buscaId, deleteId } from '../../../services/Service';
 import useLocalStorage from 'react-use-localstorage';
 
+
+
 function DeletarPostagem() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();

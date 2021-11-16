@@ -6,6 +6,7 @@ import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put} from '../../../services/Service';
 
+
 import './CadastroPostagem.css';
 
 function CadastroPostagem() {

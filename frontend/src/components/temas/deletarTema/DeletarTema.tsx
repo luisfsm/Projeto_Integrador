@@ -79,6 +79,8 @@ function DeletarTema() {
       }, [id])
       
               
+
+      
       return (
         <>
           <Box m={2} marginTop={10}>
