@@ -14,7 +14,7 @@ function Home() {
                 <Grid item xs={2} className="retanguloHome" justifyContent="center">
                     <Box className="LogoHome logoTop" alignItems="center" flexDirection="column" position="fixed">
                         <Box>
-                            <img src="https://i.imgur.com/EB2HE5Q.png" alt="logo" className="logoHome" width="250px" height="250px" />
+                            <img src="https://i.imgur.com/FpzQD5k.png" alt="logo" className="logoHome" width="250px" height="250px" />
                         </Box>
                         <Box>
                             <Typography className="textHome" alignItems="center"> <HomeSharpIcon className="iconHome" /> Home</Typography>

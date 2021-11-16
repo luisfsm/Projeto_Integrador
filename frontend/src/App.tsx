@@ -11,6 +11,7 @@ import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPo
 import Sobre from './pages/sobre/Sobre';
 import ListaTema from './components/temas/listarTema/ListarTema';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
+import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 
 
 
@@ -49,17 +50,25 @@ function App() {
           <Route exact path='/formularioPostagem/:id'>
             <CadastroPostagem />
           </Route>
+
           <Route path='/temas'>
             <ListaTema />
           </Route>
+
           <Route exact path='/formularioTema'>
             <CadastroTema />
           </Route>
+
           <Route exact path='/formularioTema/:id'>
             <CadastroTema />
           </Route>
+
           <Route exact path='/sobre'>
             <Sobre />
+          </Route>
+
+          <Route path="/deletarPostagem/:id">
+            <DeletarPostagem />
           </Route>
 
         </div>

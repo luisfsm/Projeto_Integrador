@@ -2,16 +2,20 @@
 .background-cadastro{
   background-color: #1F587B !important;
 }
+
 .text-decorator-none{
   text-decoration: none;
 }
+
 .retanguloCadastro{
   background: #022A43 !important;
   background-repeat: no-repeat !important;
   width: 100vh;
   height: 100vh;
 }
+
 .textCadastro{
+  margin-right: 5% !important;
   color: #98C7E4 !important;
 }
 
@@ -33,4 +37,8 @@
 
 .margin-right-cadastro{
   margin-right: 20px !important;
+}
+
+.logoHome{
+  padding-top: 15%;
 }
