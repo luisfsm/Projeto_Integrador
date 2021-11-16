@@ -4,7 +4,8 @@ import {useHistory, useParams } from 'react-router-dom'
 import './CadastroTema.css';
 import useLocalStorage from 'react-use-localstorage';
 import Tema from '../../../models/Tema';
-import { buscaId,post} from '../../../services/Service';
+import { buscaId,post, put} from '../../../services/Service';
+import { toast } from 'react-toastify';
 
 
 function CadastroTema() {
@@ -52,14 +53,39 @@ function CadastroTema() {
             e.preventDefault()
             console.log("tema " + JSON.stringify(tema))
     
-            if (id == undefined) {
- 
+            if (id !== undefined) {
+                console.log(tema)
+                put(`/temas`, tema, setTema, {
+                    headers: {
+                        'Authorization': token
+                    }
+                })
+                toast.success("tema atualizado com sucesso", {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                })
+            } else {
                 post(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
                 })
-                alert('Tema cadastrado com sucesso');
+                toast.success("Tema inserido com sucesso", {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                })
             }
             back()
     

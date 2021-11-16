@@ -7,17 +7,21 @@ import Home from './pages/home/Home';
 import Navbar from './components/estaticos/navbar/Navbar';
 import ListarPostagem from './components/postagens/listarPostagem/ListarPostagem';
 import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPostagem';
-
+import 'react-toastify/dist/ReactToastify.css';
 import Sobre from './pages/sobre/Sobre';
 import ListaTema from './components/temas/listarTema/ListarTema';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
+import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import { ToastContainer } from 'react-toastify';
 
 
 
 
 function App() {
+
   return (
     <Router>
+       <ToastContainer />
       <Navbar />
       <Switch>
         <div style={{ minHeight: '100vh' }}>
@@ -58,13 +62,14 @@ function App() {
           <Route exact path='/formularioTema/:id'>
             <CadastroTema />
           </Route>
+          <Route exact path='/deletarTema/:id'>
+            <DeletarTema />
+          </Route>
           <Route exact path='/sobre'>
             <Sobre />
           </Route>
-
         </div>
       </Switch>
-      
     </Router>
   )
 }
