@@ -16,7 +16,7 @@ function ListarPostagem() {
     const [posts, setPosts] = useState<Postagem[]>([])
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
     let history = useHistory();
 
     useEffect(() => {
@@ -52,15 +52,14 @@ function ListarPostagem() {
 
     return (
         <>
-            
+
             {
                 posts.map(post => (
                     <Box m={2} padding={2}>
-
                         <Card variant="outlined" className="cardColor">
                             <CardContent>
-                            <Typography variant="body2" component="p" className="textoTema">
-                                   Tema - {post.temas?.descricao}
+                                <Typography variant="body2" component="p" className="textoTema">
+                                    Tema - {post.temas?.descricao}
                                 </Typography>
 
                                 <Typography variant="h5" component="h2" className="tituloPostagem">

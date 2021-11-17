@@ -49,6 +49,7 @@ body{
 }
 
 .cadastroPadding{
+    padding: 1% !important;
     padding-right: 20%;
 }
 
@@ -68,4 +69,9 @@ body{
 
 .logoTop{
     margin-top: 5%;
+}
+
+.hr {
+	border: 0;
+	border-top: 1px solid #98C7E4;
 }

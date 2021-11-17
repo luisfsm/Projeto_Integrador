@@ -39,3 +39,9 @@
     border-radius: 5px !important;
     border-color: rgb(43, 43, 63) !important;
 }
+
+.hr {
+    margin-right: 50px !important;
+	border: 0;
+	border-top: 2px solid #98C7E4;
+}

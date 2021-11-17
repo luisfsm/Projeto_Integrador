@@ -11,7 +11,23 @@
     background-color: #0a3753 ;
 }
 
-
 .idTema{
     color: rgb(63, 61, 65);
+}
+
+.alignItems{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.marginLeft{
+    margin-left: 150% !important;
+}
+
+.backgroundColor{
+    background-color: rgba(245, 245, 245, 1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
