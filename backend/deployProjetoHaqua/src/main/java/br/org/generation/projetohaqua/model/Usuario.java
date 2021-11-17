@@ -36,11 +36,21 @@ public class Usuario {
 	@NotNull(message="Senha não pode ser em branco")
 	@Size(min=6,max=200)
 	private String senha;
-
 	
+	private String tipo;
+
 	@OneToMany(mappedBy="usuarios", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuarios")
 	private List<Postagem> postagem;
+
+	public String getTipo() {
+		return tipo;
+	}
+
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
 
 
 	public long getId() {

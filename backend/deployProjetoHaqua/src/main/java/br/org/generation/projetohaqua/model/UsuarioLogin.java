@@ -10,9 +10,19 @@ private long id;
 	
 	private String senha;
 	
+	private String tipo;
+	
 	private String token;
 
 	
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
 	public long getId() {
 		return id;
 	}
