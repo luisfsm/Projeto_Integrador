@@ -4,6 +4,9 @@ import { Box, Card, CardActions, CardContent, Button, Typography } from '@materi
 import useLocalStorage from 'react-use-localstorage';
 import { busca } from '../../../services/Service';
 import Postagem from '../../../models/Postagem';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 import './ListarPostagem.css';
 
@@ -11,12 +14,23 @@ import './ListarPostagem.css';
 function ListarPostagem() {
 
     const [posts, setPosts] = useState<Postagem[]>([])
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
     let history = useHistory();
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error("Você precisa estar logado", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            })
             history.push("/login")
 
         }
@@ -38,14 +52,14 @@ function ListarPostagem() {
 
     return (
         <>
+
             {
                 posts.map(post => (
                     <Box m={2} padding={2}>
-
                         <Card variant="outlined" className="cardColor">
                             <CardContent>
-                            <Typography variant="body2" component="p" className="textoTema">
-                                   Tema - {post.temas?.descricao}
+                                <Typography variant="body2" component="p" className="textoTema">
+                                    Tema - {post.temas?.descricao}
                                 </Typography>
 
                                 <Typography variant="h5" component="h2" className="tituloPostagem">

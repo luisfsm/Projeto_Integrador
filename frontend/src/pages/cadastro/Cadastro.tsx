@@ -5,6 +5,7 @@ import './Cadastro.css';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Service';
 import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify'
 
 function Cadastro() {
 
@@ -44,10 +45,28 @@ function Cadastro() {
         e.preventDefault()
         if (confirmarSenha == user.senha) {
             cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-            alert('Usuario cadastrado com sucesso')
+            toast.success("usuario cadastrado com sucesso", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            })
             history.push("/home")
         } else {
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+            toast.error("Dados inconsistentes. Favor verificar as informações de cadastro.", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            })
         }
     }
 
@@ -58,7 +77,7 @@ function Cadastro() {
                 <Grid item xs={4} direction="row" className="retanguloCadastro" justifyContent="center">
                     <Box alignItems="center" flexDirection="column" >
                         <Box className='left-margin-cadastro logoHome'>
-                            <img src="https://i.imgur.com/EB2HE5Q.png" alt="logo" className="logoCadastro" width="210px" height="210px" />
+                            <img src="https://i.imgur.com/FpzQD5k.png" alt="logo" className="logoCadastro" width="210px" height="210px" />
                         </Box>
 
                         <Box alignItems="center">
@@ -82,7 +101,7 @@ function Cadastro() {
                             <Box marginTop={2} textAlign='center'>
 
                                 <Link to="/login" className='text-decorator-none'>
-                                    <Button type='submit' className='text-decorator-none margin-right-cadastro' variant='contained' color='secondary'>
+                                    <Button type='submit' className='text-decorator-none margin-right-cadastro' variant='contained' color='primary'>
                                         Cancelar
                                     </Button>
                                 </Link>

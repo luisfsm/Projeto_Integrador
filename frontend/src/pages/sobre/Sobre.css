@@ -18,14 +18,15 @@ h5 {
 }
 
 .txtSobre {
+    margin-left: 40px !important;
     padding: 7%;
     padding-left: 10% !important;
     text-align: justify;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .boxSobre {
-    margin-left: 100px !important;
+    margin-left: 200px !important;
     margin-top: 5%;
 }
 

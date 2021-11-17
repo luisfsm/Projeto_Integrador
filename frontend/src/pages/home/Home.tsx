@@ -30,11 +30,12 @@ function Home() {
                         <Box className="cadastroPadding">
                             <CadastroPostagem />
                         </Box>
-                        <Box className="listPostPadding">
+                        <Box className="listPostPadding hr">
                             <ListarPostagem />
                         </Box>
                     </Box>
                 </Grid>
+
                 <Grid item xs={2}>
 
                 </Grid>
