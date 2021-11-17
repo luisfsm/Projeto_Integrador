@@ -46,10 +46,7 @@ function App() {
           <Route path='/postagens'>
             <ListarPostagem />
           </Route>
-
-
-          
-
+        
           <Route exact path='/formularioPostagem'>
             <CadastroPostagem />
           </Route>
@@ -69,11 +66,9 @@ function App() {
           <Route exact path='/formularioTema/:id'>
             <CadastroTema />
           </Route>
+
           <Route exact path='/deletarTema/:id'>
             <DeletarTema />
-          </Route>
-          <Route exact path='/sobre'>
-            <Sobre />
           </Route>
 
           <Route exact path='/sobre'>
