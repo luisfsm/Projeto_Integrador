@@ -51,7 +51,7 @@ function Login() {
             <Grid container direction='row' justifyContent='center' alignItems='center'>
                 <Grid alignItems='center' xs={4} >
                     <Box display="flex" justifyContent="center" marginTop={6}>
-                        <img src="https://i.imgur.com/ycjeb0X.png" className="haquaLogoHome" alt="" />
+                        <img src="https://i.imgur.com/FpzQD5k.png" className="haquaLogoLogin" alt="" />
                     </Box>
                     <Box>
                         <form onSubmit={onSubmit}>

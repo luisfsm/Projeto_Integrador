@@ -72,9 +72,6 @@ function App() {
           <Route exact path='/deletarTema/:id'>
             <DeletarTema />
           </Route>
-          <Route exact path='/sobre'>
-            <Sobre />
-          </Route>
 
           <Route exact path='/sobre'>
             <Sobre />

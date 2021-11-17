@@ -22,7 +22,7 @@ function Navbar() {
                     <Box className="cursor">
                         <Typography variant="h5" color="inherit" >
                             <Link to="/home">
-                                <img src="https://i.imgur.com/FpzQD5k.png" alt="logo" height="50px" />
+                                <img src="https://cdn-icons-png.flaticon.com/512/758/758729.png" alt="logo" height="25px" />
                             </Link>
                         </Typography>
                     </Box>
@@ -32,14 +32,6 @@ function Navbar() {
                         <Box mx={1} className="cursor">
                         </Box>
 
-                        <Link to='/postagens' className='text-decorator-none'>
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" color="inherit">
-                                    Postagens
-                                </Typography>
-                            </Box>
-                        </Link>
-
                         <Link to="/temas" className='text-decorator-none'>
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit">
@@ -48,18 +40,34 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to="/formularioPostagem" className="text-decorator-none">
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" color="inherit">
-                                    Nova Postagem
-                                </Typography>
-                            </Box>
-                        </Link>
-
                         <Link to="/formularioTema" className="text-decorator-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit">
                                     Novo Tema
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        <Link to="/donate" className="text-decorator-none">
+                        <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Doações
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        
+                        <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Notícias 
+                                </Typography>
+                            </Box>
+                        
+
+                        <Link to="/sobre" className="text-decorator-none">
+                        <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Sobre Nós
                                 </Typography>
                             </Box>
                         </Link>
