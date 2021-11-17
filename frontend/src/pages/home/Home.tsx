@@ -9,8 +9,6 @@ import ListarPostagem from '../../components/postagens/listarPostagem/ListarPost
 
 function Home() {
     return (
-
-        
         <>
             <Grid container>
                 <Grid item xs={2} className="retanguloHome" justifyContent="center">
