@@ -28,7 +28,7 @@ public class Postagem {
 	private String titulo;
 	
 	@NotNull (message = "Digite um texto")
-	@Size (max = 1500, message = "máximo de 1500 caracteres")
+	@Size (max = 500, message = "máximo de 500 caracteres")
 	private String texto;
 	
 	@Temporal(TemporalType.TIMESTAMP)
