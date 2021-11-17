@@ -99,14 +99,6 @@ function CadastroPostagem() {
                     'Authorization': token
                 }
             })
-
-
-        }else{
-            post(`/postagens`, postagem, setPostagem, {
-                headers: {
-                    'Authorization': token
-                }
-            })
             toast.success("Postagem atualizada com sucesso", {
                 position: "top-right",
                 autoClose: 2000,
@@ -117,7 +109,14 @@ function CadastroPostagem() {
                 theme: "colored",
                 progress: undefined,
             })
-            toast.success("Postagem cadastrada com sucesso", {
+
+        }else{
+            post(`/postagens`, postagem, setPostagem, {
+                headers: {
+                    'Authorization': token
+                }
+            })
+            toast.success("Postagem atualizada com sucesso", {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
