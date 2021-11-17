@@ -34,6 +34,7 @@ function Navbar() {
     }
 
     var navbarComponent;
+        
 
     if(token !==""){
         navbarComponent = <div>
@@ -52,13 +53,7 @@ function Navbar() {
                     <Box mx={1} className="cursor">
                     </Box>
 
-                    <Link to='/postagens' className='text-decorator-none'>
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Postagens
-                            </Typography>
-                        </Box>
-                    </Link>
+                    
 
                     <Link to="/temas" className='text-decorator-none'>
                         <Box mx={1} className="cursor">
@@ -68,21 +63,40 @@ function Navbar() {
                         </Box>
                     </Link>
 
-                    <Link to="/formularioPostagem" className="text-decorator-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Nova Postagem
-                            </Typography>
-                        </Box>
-                    </Link>
+                        <Link to="/formularioTema" className="text-decorator-none">
+                            <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Novo Tema
+                                </Typography>
+                            </Box>
+                        </Link>
 
-                    <Link to="/formularioTema" className="text-decorator-none">
+                        <Link to="/donate" className="text-decorator-none">
                         <Box mx={1} className="cursor">
-                            <Typography variant="h6" color="inherit">
-                                Novo Tema
-                            </Typography>
-                        </Box>
-                    </Link>
+                                <Typography variant="h6" color="inherit">
+                                    Doações
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        
+                        <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Notícias 
+                                </Typography>
+                            </Box>
+                        
+
+                        <Link to="/sobre" className="text-decorator-none">
+                        <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit">
+                                    Sobre Nós
+                                </Typography>
+                            </Box>
+                        </Link>
+                    
+
+                    
 
                     <Link to="/login" className="text-decorator-none">
                         <Box mx={1} className="cursor" onClick={goLogout}>

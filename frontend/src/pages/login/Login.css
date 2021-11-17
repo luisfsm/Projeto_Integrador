@@ -1,9 +1,17 @@
 .haquaLogoHome{
-  width: 119px;
-  height: 111px;
-  left: 755px;
-  top: 150px;
-  border-radius: 0px;
+  width: 119px !important;
+  height: 111px !important;
+  left: 755px !important;
+  top: 150px !important;
+  border-radius: 0px !important;
+}
+
+.haquaLogoLogin {
+  width: 200px !important;
+  height: 200px !important;
+  left: 755px !important;
+  top: 150px !important;
+  border-radius: 0px !important;
 }
 .text-decorator-none{
   text-decoration: none;
