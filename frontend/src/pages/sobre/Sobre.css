@@ -1,4 +1,82 @@
-.item {
-    width: 100%;
-    height: 100%;
+.container {
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a3753;
+}
+
+h3 {
+    text-align: center!important;
+    font-weight: bold !important;
+    color: white;
+}
+
+h5 {
+    text-align: justify;
+    font-weight: lighter;
+    color: white;
+}
+
+.txtSobre {
+    padding: 7%;
+    padding-left: 10% !important;
+    text-align: justify;
+    margin-top: 5%;
+}
+
+.boxSobre {
+    margin-left: 100px !important;
+    margin-top: 5%;
+}
+
+.imgPrincipal {
+    width: 440px;
+    height: 450px;
+}
+
+.gridFotos {
+    justify-content: center;
+    background-color: #0d4161;
+}
+
+.fotos {
+    padding: 10px;
+    margin: 10px;
+}
+
+.botaoLinkedin {
+    size: small;
+    background-color: white !important;
+    color: rgb(28, 36, 143) !important;
+}
+
+.botaoGithub {
+    size: small;
+    background-color: rgb(49, 45, 45) !important;
+    color: white !important;
+}
+
+.imgFoto {
+    /*foto dos integrantes*/
+    width: 200px;
+    height: 200px;
+}
+
+.botaoLinks {
+    /*Box com texto e botão das fotos*/
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.textoLinks {
+    /*texto dos botões Linkedin e Github*/
+    font-size: 90% !important;
+    font-weight: 600 !important;
+}
+
+.boxNome {
+    /*box contendo nome dos integrantes*/
+    justify-content: center;
+    color: #F9F0EE;
 }

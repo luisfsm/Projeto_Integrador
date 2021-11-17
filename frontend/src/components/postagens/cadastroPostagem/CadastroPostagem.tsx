@@ -1,10 +1,11 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Box, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import { useHistory, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../models/Postagem';
-import { busca, buscaId, post } from '../../../services/Service';
+import { busca, buscaId, post, put} from '../../../services/Service';
+
 
 import './CadastroPostagem.css';
 
@@ -80,6 +81,11 @@ function CadastroPostagem() {
         e.preventDefault()
 
         if (id == undefined) {
+            put(`/postagens`, postagem, setPostagem, {
+                headers: {
+                    'Authorization': token
+                }
+            })
             post(`/postagens`, postagem, setPostagem, {
                 headers: {
                     'Authorization': token
@@ -96,17 +102,20 @@ function CadastroPostagem() {
     }
 
     return (
-        <Container maxWidth="sm" className="topo">
+        <Container maxWidth="sm" className="topo paddingGeral">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textPrimary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
+                
+                <Typography variant="h3" color="textPrimary" component="h1" align="center" className="textColor" >NOVA POSTAGEM</Typography>
 
-                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" color="primary" margin="normal" fullWidth />
+                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Título" variant="outlined" name="titulo" color="primary" margin="normal" fullWidth className="border" />
 
-                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
+                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="Texto" name="texto" variant="outlined" margin="normal" fullWidth className="border"/>
 
-                <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
-                    <Select
+                
+                <FormControl>
+                <Box className="">
+                <FormHelperText className="textColor">Escolha um tema para a postagem</FormHelperText>
+                    <Select className="border"
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
                         onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {
@@ -120,11 +129,15 @@ function CadastroPostagem() {
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
-                        Finalizar
-                    </Button>
+                
+                </Box>
+                <Box className="boxPadding">
+                <Button type="submit" variant="contained" className="botaoForm">
+                        Postar
+                    </Button>     
+                </Box>
                 </FormControl>
+                
             </form>
         </Container>
     )
