@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from './pages/login/Login';
 import Footer from './components/estaticos/footer/Footer';
 import Home from './pages/home/Home';
-
+import Donate from './pages/donate/Donate';
 import ListarPostagem from './components/postagens/listarPostagem/ListarPostagem';
 import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPostagem';
 import 'react-toastify/dist/ReactToastify.css';
@@ -50,6 +50,10 @@ function App() {
 
             <Route path='/postagens'>
               <ListarPostagem />
+            </Route>
+
+            <Route path='/donate'>
+              <Donate />
             </Route>
 
             <Route exact path='/formularioPostagem'>

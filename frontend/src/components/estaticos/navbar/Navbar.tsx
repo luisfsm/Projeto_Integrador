@@ -43,7 +43,7 @@ function Navbar() {
                 <Box className="cursor">
                     <Typography variant="h5" color="inherit" >
                         <Link to="/home">
-                            <img src="https://i.imgur.com/FpzQD5k.png" alt="logo" height="50px" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/758/758729.png" alt="logo" height="25px" />
                         </Link>
                     </Typography>
                 </Box>
