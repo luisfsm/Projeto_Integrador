@@ -55,7 +55,8 @@ function ListarPostagem() {
 
             {
                 posts.map(post => (
-                    <Box m={2} padding={2}>
+
+                    <Box m={2} padding={2} className='hr'>
                         <Card variant="outlined" className="cardColor">
                             <CardContent>
                                 <Typography variant="body2" component="p" className="textoTema">
