@@ -16,7 +16,7 @@ function DeletarPostagem() {
     const { id } = useParams<{ id: string }>();
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
     const [post, setPosts] = useState<Postagem>()
 
     useEffect(() => {
@@ -65,43 +65,45 @@ function DeletarPostagem() {
             draggable: false,
             theme: "colored",
             progress: undefined,
-          })
+        })
     }
 
     function nao() {
         history.push('/postagens')
     }
-    
+
     return (
         <>
-            <Box m={2}>
-                <Card variant="outlined" >
-                    <CardContent>
-                        <Box justifyContent="center">
-                            <Typography color="textSecondary" gutterBottom>
-                                Deseja deletar a Postagem:
-                            </Typography>
-                            <Typography color="textSecondary" >
-                                {post?.titulo}
-                            </Typography>
-                        </Box>
+            <Box marginTop={12}>
+                <Box className="alignItems">
+                    <Card variant="outlined" >
+                        <CardContent>
+                            <Box justifyContent="center">
+                                <Typography color="textSecondary" gutterBottom>
+                                    Deseja deletar a postagem:
+                                </Typography>
+                                <Typography variant="h5" component="h2" >
+                                    {post?.titulo}
+                                </Typography>
+                            </Box>
+                        </CardContent>
 
-                    </CardContent>
-                    <CardActions>
-                        <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
-                            <Box mx={2}>
-                                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
-                                    Sim
-                                </Button>
+                        <CardActions>
+                            <Box display="flex" justifyContent="start" ml={1.0} mb={2} className="cardPadding" >
+                                <Box mx={2}>
+                                    <Button onClick={sim} variant="contained" className="apagarSim" size='large' >
+                                        Sim
+                                    </Button>
+                                </Box>
+                                <Box>
+                                    <Button onClick={nao} variant="contained" size='large' color="secondary" className="apagarNao">
+                                        Não
+                                    </Button>
+                                </Box>
                             </Box>
-                            <Box>
-                                <Button onClick={nao} variant="contained" size='large' color="secondary">
-                                    Não
-                                </Button>
-                            </Box>
-                        </Box>
-                    </CardActions>
-                </Card>
+                        </CardActions>
+                    </Card>
+                </Box>
             </Box>
         </>
     );

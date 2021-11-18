@@ -1,5 +1,5 @@
 import React, {useState, useEffect, ChangeEvent} from 'react'
-import { Container, Typography, TextField, Button } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Box } from "@material-ui/core"
 import {useHistory, useParams } from 'react-router-dom'
 import './CadastroTema.css';
 import useLocalStorage from 'react-use-localstorage';
@@ -112,13 +112,17 @@ function CadastroTema() {
         }
   
     return (
-        <Container maxWidth="sm" className="topo">
-            <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
+        <Container maxWidth="sm" className="topoTema" >
+            <form onSubmit={onSubmit} >
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" className="textColor" >Novo Tema</Typography>
+                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" className="border" fullWidth />
+                <Box display="flex" justifyContent="center" alignItems="center" marginTop={3}>   
+                <Button type="submit" variant="contained" color="primary" > 
                     Finalizar
                 </Button>
+
+                </Box>
+
             </form>
         </Container>
     )

@@ -87,33 +87,37 @@ function DeletarTema() {
 
   return (
     <>
-      <Box m={2} marginTop={10}>
-        <Card variant="outlined">
-          <CardContent>
-            <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
-                Deseja deletar o Tema:
-              </Typography>
-              <Typography color="textSecondary">
-                {tema?.descricao}
-              </Typography>
-            </Box>
-          </CardContent>
-          <CardActions>
-            <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
-              <Box mx={2}>
-                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
-                  Sim
-                </Button>
+      <Box marginTop={12}>
+
+        <Box className="alignItems">
+          <Card variant="outlined" className="backgroundColor" style={{ padding: "0px", width: "500px" }}>
+            <CardContent>
+              <Box justifyContent="center">
+                <Typography color="textSecondary" gutterBottom>
+                  Deseja deletar o Tema:
+                </Typography>
+                <Typography variant="h5" component="h2">
+                  {tema?.descricao}
+                </Typography>
               </Box>
-              <Box mx={2}>
-                <Button onClick={nao} variant="contained" size='large' color="secondary">
-                  Não
-                </Button>
+            </CardContent>
+
+            <CardActions>
+              <Box display="flex" justifyContent="start" ml={1.0} mb={2} className="cardPadding" >
+                <Box mx={2}>
+                  <Button onClick={sim} variant="contained" className="apagarSim" size='large' >
+                    Sim
+                  </Button>
+                </Box>
+                <Box>
+                  <Button onClick={nao} variant="contained" size='large' color="secondary" className="apagarNao">
+                    Não
+                  </Button>
+                </Box>
               </Box>
-            </Box>
-          </CardActions>
-        </Card>
+            </CardActions>
+          </Card>
+        </Box>
       </Box>
     </>
   );

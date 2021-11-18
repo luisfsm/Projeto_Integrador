@@ -30,7 +30,7 @@ function Home() {
                         <Box className="cadastroPadding">
                             <CadastroPostagem />
                         </Box>
-                        <Box className="listPostPadding hr">
+                        <Box className="listPostPadding" >
                             <ListarPostagem />
                         </Box>
                     </Box>

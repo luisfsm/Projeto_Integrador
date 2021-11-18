@@ -14,7 +14,10 @@ import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import { ToastContainer } from 'react-toastify';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
+import { Provider } from 'react-redux';
+import store from './store/store';
 import Navbar from './components/estaticos/navbar/Navbar';
+
 
 
 
