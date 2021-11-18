@@ -60,7 +60,7 @@ function ListarPostagem() {
                         <Card variant="outlined" className="cardColor">
                             <CardContent>
                                 <Typography variant="body2" component="p" className="textoTema">
-                                    Tema - {post.temas?.descricao}
+                                    {post.temas?.descricao}
                                 </Typography>
 
                                 <Typography variant="h5" component="h2" className="tituloPostagem">
