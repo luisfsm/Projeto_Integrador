@@ -27,7 +27,7 @@ function sobre() {
             <Grid container className='gridFotos'> {/*Grid encapsulando todas as fotos com botões*/}
                 <Box className='fotos'> {/*box Alan*/}
                 
-                    <img src="https://imgur.com/gJMMfAY.png" alt="foto do Alan" className='imgFoto' />
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGEb7q2e3tA4g/profile-displayphoto-shrink_800_800/0/1637325478814?e=1642636800&v=beta&t=070nOeuKfRHAzQFMCL-Puh_iiy6G3sqA5I665h2VZ0M" alt="foto do Alan" className='imgFoto' />
                     <Box className='botaoLinks' >
                         <Button variant='contained' className='botaoLinkedin'
                             href='https://www.linkedin.com/in/alanvilasboas/ ' target='_blank'>
@@ -45,7 +45,7 @@ function sobre() {
                 </Box>
 
                 <Box className='fotos'>{/*box Luis Felipe<*/}
-                    <img src="https://imgur.com/gJMMfAY.png" alt="foto do Luis Felipe" className='imgFoto' />
+                    <img src="https://media-exp1.licdn.com/dms/image/D4D35AQH2v_H3B8p7Iw/profile-framedphoto-shrink_800_800/0/1633036885763?e=1637413200&v=beta&t=ipdwgv58f-8y_avsmAbvoAXHeFPk5eykyWbkQ_JyAW4" alt="foto do Luis Felipe" className='imgFoto' />
                     <Box className='botaoLinks'>
                         <Button variant='contained' className='botaoLinkedin'
                             href='https://www.linkedin.com/in/lfsm/' target='_blank'>
@@ -63,7 +63,7 @@ function sobre() {
                 </Box>
 
                 <Box className='fotos'>{/*box Luis Hariel*/}
-                    <img src="https://imgur.com/gJMMfAY.png" alt="foto do Luis Hariel" className='imgFoto' />
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEyalWjTMOjog/profile-displayphoto-shrink_800_800/0/1636500744979?e=1642636800&v=beta&t=2z2vs4Ns5E2zjTORRvNVi5Yiu8C4-QRV4wMiI13O_x0" alt="foto do Luis Hariel" className='imgFoto' />
                     <Box className='botaoLinks'>
                         <Button variant='contained' className='botaoLinkedin'
                             href='https://www.linkedin.com/in/luis-hariel-8152281b7' target='_blank'>
@@ -83,7 +83,7 @@ function sobre() {
                 </Box>
 
                 <Box className='fotos'>{/*box José*/}
-                    <img src="https://imgur.com/gJMMfAY.png" alt="foto do José" className='imgFoto' />
+                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHVJVcG-g5Q6Q/profile-displayphoto-shrink_800_800/0/1629127710235?e=1642636800&v=beta&t=gTscEE816JUOeIH87UUhWdlQ9M7AtpAkoi_P3kniSVg" alt="foto do José" className='imgFoto' />
                     <Box className='botaoLinks'>
 
                         <Button variant='contained' className='botaoLinkedin'

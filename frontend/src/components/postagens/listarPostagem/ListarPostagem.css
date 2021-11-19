@@ -38,6 +38,7 @@
     background-color: #98C7E4 !important;
     border-radius: 5px !important;
     border-color: rgb(43, 43, 63) !important;
+    size-adjust: 20px !important;
 }
 
 .hr {
@@ -49,4 +50,8 @@
 .hr {
 	border: 0;
 	border-top: 1px solid #98C7E4;
+}
+
+.marginLeft {
+    margin-left: 40px !important;
 }

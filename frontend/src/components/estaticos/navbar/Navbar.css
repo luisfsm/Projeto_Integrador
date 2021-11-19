@@ -20,5 +20,9 @@
 }
 
 .spaceAround{
-    margin-left: 20px;
+    margin-left: 40px !important;
+}
+
+.alignItemsNav {
+    margin-left: 80px !important;
 }
