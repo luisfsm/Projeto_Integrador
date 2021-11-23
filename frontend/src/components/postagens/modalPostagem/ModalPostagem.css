@@ -1,0 +1,18 @@
+.cursor{
+    cursor: pointer;
+}
+
+.btnModal{
+    border-color: white !important;
+    background-color: white !important;
+}
+
+
+.iconUserModal {
+    width: "550px" !important;
+    height: "550px" !important
+}
+
+.modalCenter{
+    text-align: center !important;
+}

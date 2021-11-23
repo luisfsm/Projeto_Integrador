@@ -163,8 +163,8 @@ function CadastroPostagem() {
                             </Select>
                 
                         </Box>
-                        <Box className="boxPadding">
-                        <Button type="submit" variant="contained" className="botaoForm">
+                        <Box className="boxPadding" marginTop={1}>
+                        <Button type="submit" variant="contained" color="primary">
                                 Postar
                             </Button>
                         </Box>
