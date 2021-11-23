@@ -20,9 +20,42 @@
 }
 
 .spaceAround{
-    margin-left: 40px !important;
+    margin-left: 10% !important;
 }
 
 .alignItemsNav {
-    margin-left: 80px !important;
+    margin-left: 10% !important;
 }
+
+
+@media (max-width: 360px){
+    .text-decorator-none{
+        text-decoration: none;
+    }
+    
+    .cursor{
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .navcor{
+        padding-left: 5%;
+        background-color: #022A43 !important;
+    }
+    
+    .div {
+        border-style: double;
+        border-width: 1px;  
+        border-color: #98C7E4;
+    }
+    
+    .spaceAround{
+        margin-left: 5% !important;
+    }
+    
+    .alignItemsNav {
+        margin-left: 1% !important;
+    }
+    
+ }

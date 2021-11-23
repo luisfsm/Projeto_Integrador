@@ -75,7 +75,7 @@ function Login() {
                     </Box>
                     <Box>
                         <form onSubmit={onSubmit}>
-                            <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}  id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth className="border" />
+                            <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth className="border" />
                             <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth className="border" />
                             <Box>
                                 <Typography variant='subtitle1' className="recuperarSenha" gutterBottom>Recuperar senha</Typography>
@@ -88,10 +88,10 @@ function Login() {
                             </Box>
 
                             <Link to="/cadastrar" className='text-decorator-none'>
-                            <Box marginTop={2}>
-                                <Typography variant='subtitle1' gutterBottom className="cadastrar" align='center'>Não tem uma conta? Cadastre-se!</Typography>
-                            </Box>
-                            </Link>              
+                                <Box marginTop={2}>
+                                    <Typography variant='subtitle1' gutterBottom className="cadastrar" align='center'>Não tem uma conta? Cadastre-se!</Typography>
+                                </Box>
+                            </Link>
                         </form>
                     </Box>
                 </Grid>
