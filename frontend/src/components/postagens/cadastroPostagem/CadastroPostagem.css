@@ -1,7 +1,9 @@
 .topo{
     margin-top: 6%;
 }
-
+.textColor{
+    color: rgb(204, 205, 206) !important;
+}
 
 
 /* Aba Responsividade, Dimension base Moto G4 (360px) x (640px) / 100% Vh */
