@@ -24,7 +24,7 @@ function Donate() {
 
             <Grid container justifyContent="center" className="backgroundColorDonate">
                 <Box>
-                <Typography className="textDonate">Essas são as iniciativas em aberto:</Typography>
+                    <Typography className="textDonate">Essas são as iniciativas em aberto:</Typography>
                 </Box>
             </Grid>
 
@@ -37,11 +37,11 @@ function Donate() {
                                 <img src="https://www.correio24horas.com.br/fileadmin/_processed_/c/3/csm_24102018_baz_sommelier_de_aguas_cred_divulgacao_shutterstock_1_aff62af31d.jpg" alt="Avatar" width='400px' />
                             </div>
                             <div>
-                                <Typography className="titleText">Iniciativa 1</Typography> 
-                                <Button className='botaoSaibaMais'>Saber mais</Button>    
-                                <Button className='botaoDoar'>Doar</Button>               
+                                <Typography className="titleText">Iniciativa 1</Typography>
+                                <Button className='botaoSaibaMais'>Saber mais</Button>
+                                <Button className='botaoDoar'>Doar</Button>
                             </div>
-                            
+
                         </CardContent>
                     </Card>
                 </Box>
@@ -52,7 +52,7 @@ function Donate() {
                             <div className="card">
                                 <img src="https://www.correio24horas.com.br/fileadmin/_processed_/c/3/csm_24102018_baz_sommelier_de_aguas_cred_divulgacao_shutterstock_1_aff62af31d.jpg" alt="Avatar" width='400px' />
                                 <Typography className="titleText">Iniciativa 2</Typography>
-                                <Button className='botaoSaibaMais'>Saber mais</Button>    
+                                <Button className='botaoSaibaMais'>Saber mais</Button>
                                 <Button className='botaoDoar'>Doar</Button>
                             </div>
                         </CardContent>
@@ -65,7 +65,7 @@ function Donate() {
                             <div className="card">
                                 <img src="https://www.correio24horas.com.br/fileadmin/_processed_/c/3/csm_24102018_baz_sommelier_de_aguas_cred_divulgacao_shutterstock_1_aff62af31d.jpg" alt="Avatar" width='400px' />
                                 <Typography className="titleText">Iniciativa 3</Typography>
-                                <Button className='botaoSaibaMais'>Saber mais</Button>    
+                                <Button className='botaoSaibaMais'>Saber mais</Button>
                                 <Button className='botaoDoar'>Doar</Button>
                             </div>
                         </CardContent>
