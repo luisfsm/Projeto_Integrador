@@ -20,5 +20,43 @@
 }
 
 .spaceAround{
-    margin-left: 20px;
+    margin-left: 10% !important;
 }
+
+.alignItemsNav {
+    margin-left: 10% !important;
+}
+
+/* Aba Responsividade, Dimension base Moto G4 (360px) x (640px) / 100% Vh */
+
+@media (max-width: 360px){
+    .text-decorator-none{
+        text-decoration: none;
+    }
+    
+    .cursor{
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .navcor{
+        padding-left: 3%;
+        background-color: #022A43 !important;
+    }
+    
+    .div {
+        border-style: double;
+        border-width: 1px;  
+        border-color: #98C7E4;
+    }
+    
+    .spaceAround{
+        margin-left: 5% !important;
+    }
+    
+    .alignItemsNav {
+        margin-left: 1% !important;
+    }
+    
+ }

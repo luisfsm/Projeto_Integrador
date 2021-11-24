@@ -38,9 +38,9 @@ function Navbar() {
 
     if (token !== "") {
         navbarComponent = <div>
-            <AppBar position="fixed" className="navcor div">
+            <AppBar position="fixed" className="navcor div alignItemsNav">
                 <Toolbar variant="regular">
-                    <Box className="cursor">
+                    <Box className="cursor alignItemsNav">
                         <Typography variant="h5" color="inherit" >
                             <Link to="/home">
                                 <img src="https://cdn-icons-png.flaticon.com/512/758/758729.png" alt="logo" height="25px" />
@@ -55,29 +55,14 @@ function Navbar() {
 
 
 
-                        <Link to="/temas" className='text-decorator-none'>
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" color="inherit">
-                                    Temas
-                                </Typography>
-                            </Box>
-                        </Link>
-
-                        <Link to="/formularioTema" className="text-decorator-none">
-                            <Box mx={1} className="cursor">
-                                <Typography variant="h6" color="inherit">
-                                    Novo Tema
-                                </Typography>
-                            </Box>
-                        </Link>
-
-                        <Link to="/donate" className="text-decorator-none">
+                        <Link to='/donate' className="text-decorator-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit">
                                     Doações
                                 </Typography>
                             </Box>
                         </Link>
+                        
 
 
                         <Box mx={1} className="cursor">

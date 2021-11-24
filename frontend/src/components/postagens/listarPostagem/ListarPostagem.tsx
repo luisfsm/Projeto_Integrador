@@ -7,6 +7,8 @@ import Postagem from '../../../models/Postagem';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import ModeEditSharpIcon from '@mui/icons-material/ModeEditSharp';
+import DeleteSharpIcon from '@mui/icons-material/DeleteSharp';
 
 import './ListarPostagem.css';
 
@@ -52,16 +54,27 @@ function ListarPostagem() {
 
     return (
         <>
+        <Box marginTop={8}>
 
+        
             {
                 posts.map(post => (
 
                     <Box m={2} padding={2} className='hr'>
-                        <Card variant="outlined" className="cardColor">
+                        <Card variant="outlined" className="cardColor card">
                             <CardContent>
-                                <Typography variant="body2" component="p" className="textoTema">
-                                    {post.temas?.descricao}
-                                </Typography>
+                                <Box display="flex" justifyContent="flex-end">
+                                    <Typography variant="body2" component="p" className="textoTema" >
+                                        {post.temas?.descricao}
+                                    </Typography>
+
+                                    <Link to={`/formularioPostagem/${post.id}`}         className="text-decorator-none " >
+                                        <ModeEditSharpIcon className="iconBackGround" />
+                                    </Link>
+                                    
+                                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none"><DeleteSharpIcon className="iconBackGround" /></Link>
+                                    
+                                </Box>
 
                                 <Typography variant="h5" component="h2" className="tituloPostagem">
                                     {post.titulo}
@@ -71,30 +84,11 @@ function ListarPostagem() {
                                     {post.texto}
                                 </Typography>
                             </CardContent>
-
-                            <CardActions>
-                                <Box display="flex" justifyContent="center" mb={1.5}>
-                                    <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                                        <Box mx={1}>
-                                            <Button variant="contained" className="abotao"  >
-                                                atualizar
-                                            </Button>
-                                        </Box>
-                                    </Link>
-                                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                                        <Box mx={1}>
-                                            <Button variant="contained" className="ebotao">
-                                                DELETAR
-                                            </Button>
-                                        </Box>
-                                    </Link>
-                                </Box>
-                            </CardActions>
-
                         </Card>
                     </Box>
                 ))
             }
+        </Box>
         </>)
 }
 export default ListarPostagem;

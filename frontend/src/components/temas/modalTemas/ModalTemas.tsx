@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
-import { Button, Box, TextField } from "@material-ui/core"
+import { Button, Box, TextField, Typography } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
-import './ModalPostagem.css';
-import CadastroPostagem from '../cadastroPostagem/CadastroPostagem';
-import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
+import CadastroTema from '../cadastroTema/CadastroTema';
+import HealingSharpIcon from '@mui/icons-material/HealingSharp';
+
 
 function getModalStyle() {
     const top = 50;
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-function ModalPostagem() {
+function ModalTemas() {
     const classes = useStyles();
     const [modalStyle] = React.useState(getModalStyle);
     const [open, setOpen] = React.useState(false);
@@ -50,24 +50,29 @@ function ModalPostagem() {
                 <CloseIcon onClick={handleClose} />
             </Box>
 
-            <CadastroPostagem />
+            <CadastroTema />
         </div>
     );
 
-    return (
-        <div>
 
-                <TextField id='modalPostagem' placeholder='Nova publicação' variant='outlined' name='modalPostagem' margin='normal' className="inputBackGroudCadastro modalCenter" fullWidth onClick={handleOpen} />
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="simple-modal-title"
-                aria-describedby="simple-modal-description"
-            >
-                {body}
-            </Modal>
-        </div>
-    )
-}
+        return (
+            <>
 
-export default ModalPostagem
+                 <Typography  className="textHome cursor" color="initial"  onClick={handleOpen}>
+                    <HealingSharpIcon className="iconHome" /> Novo Tema
+                 </Typography>
+
+
+                <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="simple-modal-title"
+                    aria-describedby="simple-modal-description"
+                >
+                    {body}
+                </Modal>
+            </>
+        )
+    }
+
+    export default ModalTemas;

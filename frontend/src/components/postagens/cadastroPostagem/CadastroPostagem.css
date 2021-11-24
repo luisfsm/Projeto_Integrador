@@ -1,20 +1,41 @@
-.textColor {
+.topo{
+    margin-top: 6%;
+}
+
+.textColor{
     color: rgb(204, 205, 206) !important;
 }
 
-.formColor {
-    color :white !important;
-    border-color: white !important;
-}
 
-.botaoForm {
-    background-color: rgb(17, 87, 110) !important;
-    color: white !important;
-    margin-left: 468px !important;
-    margin-bottom: 0px !important;
-}
+/* Aba Responsividade, Dimension base Moto G4 (360px) x (640px) / 100% Vh */
 
+@media (max-width: 360px){
 
-.paddingGeral {
-    margin-left: 200px !important;
+    Box{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .textColor {
+        color: rgb(204, 205, 206) !important;
+    }
+    
+    .formColor {
+        color :white !important;
+        border-color: white !important;
+    }
+    
+    .botaoForm {
+        background-color: rgb(17, 87, 110) !important;
+        color: white !important;
+        margin-left: 100% !important;
+        margin-bottom: 0px !important;
+    }
+    
+    .paddingGeral {
+        display: flex;
+        flex-direction: row;
+        margin-left: 25% !important;
+    }
+
 }

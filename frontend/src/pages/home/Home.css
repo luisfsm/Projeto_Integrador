@@ -2,38 +2,24 @@ body{
     background: #022A43 !important;
     background-repeat: no-repeat !important;
 }
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
 .retanguloHome{
     background: #1F587B !important;
     background-repeat: no-repeat !important;
 }
 
 .textHome{
-    padding-left: 18%;
-    font-size: 30px !important;
+    padding-left: 15%;
+    font-size: 20px !important;
     color: white;
 }
 
-.iconHome{
-    width: 40px !important;
-    height:30px !important;
-}
-
-.textarea {
-    resize: none;
-    margin-bottom: 1rem;
-    color: black;
-    background-color: #D0DCFB;
-    width:  600px !important;
-    height: 100px !important;
-    border-color: #D0DCFB;
-}
-
-.p-5-home{
-    padding-top: 50px;
-}
-
 .iconUsersHome{
-    width: 60px !important;
+    width: 10% !important;
     height: 60px !important;
     color: #D0DCFB;
     padding: 20px;
@@ -48,30 +34,117 @@ body{
     color: white;
 }
 
+.logoHome{
+    width: 100% !important;
+    max-width: 441px;
+}
+
 .cadastroPadding{
-    padding: 1% !important;
-    padding-right: 20%;
+    padding-top: 5% !important;
 }
 
 .listPostPadding{
-    padding-left: 10%;
-    padding-right: 5%;
-    width: 70% !important;
+    padding-left: 10% !important;
+    padding-right: 5% !important;
+
+    width: 100% !important;
+    max-width: 830px;
 }
 
 .listPostColor{
     background-color: #98C7E4;
 }
 
-.BoxWidth{
-    width: 300px !important;
-}
-
 .logoTop{
     margin-top: 5%;
+    width: 17%;
+    max-width: 441px;
 }
 
 .hr {
 	border: 0;
 	border-top: 1px solid #98C7E4;
+}
+
+.textSizeHome {
+    font-size: 20px !important;
+}
+
+.marginRightHomeText {
+    margin-right: 20px !important;
+}
+
+.marginLeftModal{
+    margin-left: 10% !important;
+}
+
+
+
+@media (max-width: 360px){
+
+    .text-decorator-none{
+        text-decoration: none;
+    }
+    
+    
+    .textHome{
+        padding-left: 5%;
+        font-size: 15px !important;
+        color: white;
+    }
+    
+    .iconUsersHome{
+        width: 7% !important;
+        height: 10px !important;
+        color: #D0DCFB;
+        padding: 20px;
+    }
+    
+    .btnHome{
+        background-color: #98C7E4;
+        color: azure;
+    }
+    
+    .logoHomePost{
+        color: white;
+    }
+    
+    .logoHome{
+        width: 80% !important;
+        max-width: 441px;
+    }
+    
+    .cadastroPadding{
+        padding-top: 5% !important;
+    }
+    
+    .listPostPadding{
+        padding-left: 10% !important;
+        padding-right: 5% !important;
+        width: 100%;
+    }
+    
+    .listPostColor{
+        background-color: #c8d0d4;
+    }
+    
+    .logoTop{
+        margin-top: 25%;
+        width: 20%;
+        max-width: 440px;
+    }
+    
+    .hr {
+        border: 0;
+        border-top: 1px solid #98C7E4;
+    }
+    
+    .textSizeHome {
+        font-size: 20px !important;
+    }
+    
+    .marginRightHomeText {
+        margin-right: 20px !important;
+    }
+
 }
