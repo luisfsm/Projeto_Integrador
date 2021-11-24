@@ -55,12 +55,13 @@ function Navbar() {
 
 
 
-                        
+                        <Link to='/donate' className="text-decorator-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit">
                                     Doações
                                 </Typography>
                             </Box>
+                        </Link>
                         
 
 

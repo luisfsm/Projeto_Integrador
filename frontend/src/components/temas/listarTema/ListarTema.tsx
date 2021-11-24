@@ -10,6 +10,8 @@ import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import ModeEditSharpIcon from '@mui/icons-material/ModeEditSharp';
+import DeleteSharpIcon from '@mui/icons-material/DeleteSharp';
 
 function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([])
@@ -57,8 +59,16 @@ function ListaTema() {
             <Box m={2}>
 
               <Box className="alignItems">
-                <Card variant="outlined" className="backgroundColor" style={{padding: "0px", width: "500px"}}>
+                <Card variant="outlined" className="backgroundColor" style={{ padding: "0px", width: "500px" }}>
                   <CardContent>
+                    <Box display="flex" justifyContent="flex-end">
+                      <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none " >
+                        <ModeEditSharpIcon className="iconBackGround" />
+                      </Link>
+
+                      <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none"><DeleteSharpIcon className="iconBackGround" /></Link>
+
+                    </Box>
                     <Typography color="textSecondary" gutterBottom>
                       Tema
                     </Typography>
@@ -66,24 +76,6 @@ function ListaTema() {
                       {tema.descricao}
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Box display="flex" justifyContent="center" mb={1.5}>
-                      <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
-                        <Box mx={1} marginRight={3}>
-                          <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                            atualizar
-                          </Button>
-                        </Box>
-                      </Link>
-                      <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
-                        <Box mx={1}>
-                          <Button variant="contained" className="marginLeft" size='small' color="secondary">
-                            deletar
-                          </Button>
-                        </Box>
-                      </Link>
-                    </Box>
-                  </CardActions>
                 </Card>
               </Box>
 

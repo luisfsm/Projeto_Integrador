@@ -46,6 +46,7 @@ body{
 .listPostPadding{
     padding-left: 10% !important;
     padding-right: 5% !important;
+
     width: 100% !important;
     max-width: 830px;
 }
@@ -71,6 +72,10 @@ body{
 
 .marginRightHomeText {
     margin-right: 20px !important;
+}
+
+.marginLeftModal{
+    margin-left: 10% !important;
 }
 
 

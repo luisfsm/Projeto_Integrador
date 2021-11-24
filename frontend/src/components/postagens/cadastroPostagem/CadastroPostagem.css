@@ -1,24 +1,10 @@
-.textColor {
+.topo{
+    margin-top: 6%;
+}
+
+.textColor{
     color: rgb(204, 205, 206) !important;
 }
-
-.formColor {
-    color :white !important;
-    border-color: white !important;
-}
-
-.botaoForm {
-    background-color: rgb(17, 87, 110) !important;
-    color: white !important;
-    margin-left: 468px !important;
-    margin-bottom: 0px !important;
-}
-
-
-.paddingGeral {
-    margin-left: 15% !important;
-}
-
 
 
 /* Aba Responsividade, Dimension base Moto G4 (360px) x (640px) / 100% Vh */
