@@ -8,6 +8,7 @@ import CadastroPostagem from '../../components/postagens/cadastroPostagem/Cadast
 import ListarPostagem from '../../components/postagens/listarPostagem/ListarPostagem';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
+import ModalTemas from '../../components/temas/modalTemas/ModalTemas';
 
 
 function Home() {
@@ -25,13 +26,9 @@ function Home() {
                                 <Typography className="textHome" alignItems="center"><HealingSharpIcon className="iconHome" /> Temas</Typography>
                             </Box>
                         </Link>
-
-                        <Link to="/formularioTema" className="text-decorator-none">
                             <Box>
-                                <Typography className="textHome" alignItems="center"><HealingSharpIcon className="iconHome" /> Novo Tema</Typography>
+                                 <ModalTemas />   
                             </Box>
-                        </Link>
-
                     </Box>
                 </Grid>
 
