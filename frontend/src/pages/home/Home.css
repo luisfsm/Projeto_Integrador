@@ -75,27 +75,22 @@ body{
 
 
 
-@media (max-width: 640px){
-
+@media (max-width: 360px){
 
     .text-decorator-none{
         text-decoration: none;
     }
     
-    .retanguloHome{
-        background: #1F587B !important;
-        background-repeat: no-repeat !important;
-    }
     
     .textHome{
         padding-left: 5%;
-        font-size: 20px !important;
+        font-size: 15px !important;
         color: white;
     }
     
     .iconUsersHome{
-        width: 10% !important;
-        height: 60px !important;
+        width: 7% !important;
+        height: 10px !important;
         color: #D0DCFB;
         padding: 20px;
     }
@@ -110,7 +105,7 @@ body{
     }
     
     .logoHome{
-        width: 100% !important;
+        width: 80% !important;
         max-width: 441px;
     }
     
@@ -125,13 +120,13 @@ body{
     }
     
     .listPostColor{
-        background-color: #98C7E4;
+        background-color: #c8d0d4;
     }
     
     .logoTop{
         margin-top: 25%;
         width: 20%;
-        max-width: 441px;
+        max-width: 440px;
     }
     
     .hr {

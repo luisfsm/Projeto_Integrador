@@ -27,6 +27,7 @@
     margin-left: 10% !important;
 }
 
+/* Aba Responsividade, Dimension base Moto G4 (360px) x (640px) / 100% Vh */
 
 @media (max-width: 360px){
     .text-decorator-none{
@@ -40,7 +41,7 @@
     }
     
     .navcor{
-        padding-left: 5%;
+        padding-left: 3%;
         background-color: #022A43 !important;
     }
     

@@ -2,6 +2,12 @@
     text-decoration: none;
 }
 
+.paddingFormularioPost{
+    padding: 50% !important;
+    margin-left: 50% !important;
+    align-items: center !important;
+}
+
 .tituloPostagem {
     color: rgb(14, 8, 34) !important;
     font-weight: bold !important;
