@@ -95,9 +95,9 @@ function Cadastro() {
                 <Grid item xs={8}>
                     <Box paddingX={16} alignItems='center'>
                         <form onSubmit={onSubmit}>
-                            <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' className="inputBackGroudCadastro" fullWidth />
+                            <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' className="inputBackGroudCadastro"  fullWidth />
 
-                            <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' className="inputBackGroudCadastro" fullWidth />
+                            <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' className="inputBackGroudCadastro" type="email" fullWidth />
 
                             <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' className="inputBackGroudCadastro" fullWidth />
 
