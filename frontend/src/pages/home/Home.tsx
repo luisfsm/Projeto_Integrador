@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Grid, Button, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import HomeSharpIcon from '@mui/icons-material/HomeSharp';
 import HealingSharpIcon from '@mui/icons-material/HealingSharp';
 import CadastroPostagem from '../../components/postagens/cadastroPostagem/CadastroPostagem';
 import ListarPostagem from '../../components/postagens/listarPostagem/ListarPostagem';
@@ -10,7 +9,7 @@ import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostage
 import PaidIcon from '@mui/icons-material/Paid';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import CarouselComponent from '../../components/carousel/CarouselComponent';
-
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 function Home() {
     return (
@@ -59,30 +58,57 @@ function Home() {
                 <Grid item xs={2}>
                     <Box alignItems="center" position="fixed" className="rightBar">
                         <div className="rightBarTitle">
-                            <Typography variant="h4">
-                                Eventos
-                            </Typography>
+                            <h4>Eventos</h4>
+                            <div className="rightBarTitle">
+                                <a href="#">Veja Tudo</a>
+                            </div>
                         </div>
 
                         <div className="event">
                             <div className="left-event">
                                 <Typography variant="h5">
-                                    18
+                                    09
                                 </Typography>
-                                <span>Março</span>
+                                <span>Agosto | 21</span>
                             </div>
 
                             <div className="right-event">
                                 <Typography variant="h5">
-                                    ONU
+                                    ODS
                                 </Typography>
-                                <p>
-                                    São Paulo
-                                </p>
-                                <p>
-                                    Mais Informações
-                                </p>
 
+                                <Typography variant="h6">
+                                    <LocationOnIcon fontSize="small" />
+                                    São Paulo
+                                </Typography>
+
+                                <a href="https://conhecendoosods.com.br/sobre-o-evento/" target="_blank">
+                                    Mais Informações
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="event">
+                                <div className="left-event">
+                                    <Typography variant="h5">
+                                        21
+                                    </Typography>
+                                    <span>Março | 22</span>
+                                </div>
+
+                                <div className="right-event">
+                                    <Typography variant="h5">
+                                        ONU
+                                    </Typography>
+                                    <Typography variant="h6">
+                                        <LocationOnIcon fontSize="small" />
+                                        Portugal
+                                    </Typography>
+                                    <a href="https://sabiasque.pt/agenda/evento/2248-declaracao-universal-dos-direitos-da-agua.html" target="_blank">
+                                        Mais Informações
+                                    </a>
+                                </div>
                             </div>
                         </div>
 

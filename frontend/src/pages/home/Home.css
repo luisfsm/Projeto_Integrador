@@ -29,12 +29,11 @@ body{
 }
 
 .rightBar{
-    width: 14%;
+    width: 16%;
     height: 50%;
     display: flex;
     flex-direction: column;
     margin-right: 20%;
-    position: sticky;
     top: 80px;
     background: #fff;
     padding: 10px;
@@ -44,22 +43,35 @@ body{
 }
 
 .rightBarTitle{
-    margin-right: 55%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 18px;
 }
 
-.rightBarTitle h4{ 
+.rightBarTitle h3{ 
     font-weight: 600;
     font-size: 16px;
+}
+
+.rightBarTitle a{
+    margin-left: 100%;
+    margin-left: 70px !important;
+    text-decoration: none;
+    color: #022A43;
+    font-size: 13px;
 }
 
 .rightBarTitle-sub{
     text-decoration: none;
     color: #022A43;
     font-size: 12px;
+}
+
+.maisInfo{
+    margin-right: 20%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
 }
 
 .event{
@@ -73,6 +85,21 @@ body{
     font-weight: 600;
     font-size: 18px;
 }
+
+.right-event h6{
+    color: black;
+    font-size: 16px;
+}
+
+.right-event a{
+    text-decoration: none;
+    color: #022A43;
+}
+
+.right-event a:hover{
+    color: black;
+}
+
 
 .left-event{
     border-radius: 12%;
@@ -91,7 +118,7 @@ body{
     bottom: 0;
     left: 0;
     width: 100%;
-    background: blue;
+    background: #022A43;
     color: #fff;
     font-size: 10px;
     padding: 4px 0;
@@ -99,7 +126,7 @@ body{
 
 .left-event h5{
     color: black;
-    margin-left: 17px;
+    margin-left: 19px;
 }
 
 .event p{
