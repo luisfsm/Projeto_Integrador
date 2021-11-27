@@ -23,6 +23,7 @@ function Cadastro() {
             usuario: '',
             senha: ''
         })
+
     const [userResult, setUserResult] = useState<User>(
         {
             id: 0,
@@ -30,11 +31,13 @@ function Cadastro() {
             usuario: '',
             senha: ''
         })
+
     useEffect(() => {
         if (userResult.id !== 0) {
             history.push("/login")
         }
     }, [userResult])
+
     function confirmarSenhaHandle(e: ChangeEvent<HTMLInputElement>) {
         setConfirmarSenha(e.target.value)
     }
@@ -45,6 +48,7 @@ function Cadastro() {
             [e.target.name]: e.target.value
         })
     }
+
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
         if (confirmarSenha == user.senha) {
@@ -73,6 +77,12 @@ function Cadastro() {
                 progress: undefined,
             })
         }
+    }
+
+    function validaemail(){
+        let usuario = document.querySelector("#usuario")
+
+        
     }
 
     return (
