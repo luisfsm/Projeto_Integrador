@@ -50,12 +50,11 @@ body{
 
 .rightBarTitle h3{ 
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .rightBarTitle a{
-    margin-left: 100%;
-    margin-left: 70px !important;
+    margin-left: 70px;
     text-decoration: none;
     color: #022A43;
     font-size: 13px;
@@ -168,11 +167,6 @@ body{
     margin-top: 5%;
     width: 17%;
     max-width: 441px;
-}
-
-.hr {
-	border: 0;
-	border-top: 1px solid #98C7E4;
 }
 
 .textSizeHome {

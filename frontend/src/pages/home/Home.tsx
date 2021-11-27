@@ -59,7 +59,7 @@ function Home() {
                     <Box alignItems="center" position="fixed" className="rightBar">
                         <div className="rightBarTitle">
                             <h4>Eventos</h4>
-                            <div className="rightBarTitle">
+                            <div className="rightBarFTitle">
                                 <a href="#">Veja Tudo</a>
                             </div>
                         </div>
@@ -71,17 +71,14 @@ function Home() {
                                 </Typography>
                                 <span>Agosto | 21</span>
                             </div>
-
                             <div className="right-event">
                                 <Typography variant="h5">
                                     ODS
                                 </Typography>
-
                                 <Typography variant="h6">
                                     <LocationOnIcon fontSize="small" />
                                     São Paulo
                                 </Typography>
-
                                 <a href="https://conhecendoosods.com.br/sobre-o-evento/" target="_blank">
                                     Mais Informações
                                 </a>
@@ -110,11 +107,10 @@ function Home() {
                                     </a>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </Box>
                 </Grid>
-
             </Grid>
         </>
     )
