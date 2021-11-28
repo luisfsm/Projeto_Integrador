@@ -1,54 +1,42 @@
-.textDonate {
-    color: #371772 !important;
+.cardImage {
+    border-radius: 500px !important;
+    height: 300px !important;
+    width: 300px !important;
+}
+
+.titleFont {
     font-weight: bold !important;
     text-align: center !important;
     font-size: 20px !important;
-}
-
-.backgroundColorDonate {
-    background-color: lightblue !important;
-}
-
-.box1donate {
-    margin-top: 35px !important;
-    margin-bottom: 10px !important;
-}
-
-.card {
-    background-color: white !important;
-    transition: 0.3s;
-  }
-
- .cardColor {
-     background-color: white !important;
- } 
-  
-.titleText {
-    font-weight: bold !important;
-    font-size: 20px !important;
-    text-align: center !important;
     padding-top: 5px !important;
 }
 
-.textoDescricao {
-    font-size: 15px !important;
-    text-align: left !important;
-    padding: 40px !important;
+.textFont {
+    text-align: center !important;
+    padding-top: 5px !important;
+    word-break: break-all !important;
 }
 
-.botaoDoar{
-    size: 20% !important;
-    background-color: rgb(17, 87, 110) !important;
-    color: white !important;
-    margin-top: 20px !important;
-    margin-left: 20px !important;
+.gridPadding {
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 
-.botaoSaibaMais{
-    size: 20% !important;
-    background-color: rgb(17, 87, 110) !important;
-    color: white !important;
-    margin-top: 20px !important;
-    margin-left: 120px !important;
-} 
+.backGroundColorTopo {
+    background-color: rgb(61, 57, 57) !important;
+    padding: 5px !important;
+}
 
+.cardMargin {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+.aboutFont {
+    font-size: 30px !important;
+    font-weight: bold !important;
+    padding: 20px !important;
+    color: black !important;
+    text-align: center !important;
+}
