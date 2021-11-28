@@ -19,7 +19,7 @@ function Home() {
             <Grid container className='bodyHome'>
                 <Grid item xs={2}>
                     <Box className="leftBar">
-                        <Box className="logoTop" alignItems="center" position="fixed">
+                        <Box  alignItems="center" position="fixed">
 
                             <Link to="/temas" className="text-decorator-none">
                                 <Box>
