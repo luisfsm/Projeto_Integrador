@@ -39,6 +39,15 @@ function Home() {
                             <Box>
                                 <ModalTemas />
                             </Box>
+
+                            <Link to="/sobre" className="text-decorator-none">
+                                <Box>
+                                    <Typography className="textHome" alignItems="center"><HealingSharpIcon />
+                                        Sobre
+                                    </Typography>
+                                </Box>
+                            </Link>
+
                         </Box>
                     </Box>
                 </Grid>
@@ -113,7 +122,7 @@ function Home() {
                                 <a href="#">Veja Tudo</a>
                             </div>
                         </div>
-                       <ListarNoticia />
+                        <ListarNoticia />
                     </Box>
                 </Grid>
             </Grid>
