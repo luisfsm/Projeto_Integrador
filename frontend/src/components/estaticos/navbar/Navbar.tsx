@@ -87,7 +87,7 @@ function Navbar() {
     if (token !== "") {
         navbarComponent = <div>
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static" className="navcor">
+                <AppBar position="fixed" className="navcor">
                     <Toolbar>
                         <IconButton
                             size="large"

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Grid, Button, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-import './Home.css';
 import HealingSharpIcon from '@mui/icons-material/HealingSharp';
 import CadastroPostagem from '../../components/postagens/cadastroPostagem/CadastroPostagem';
 import ListarPostagem from '../../components/postagens/listarPostagem/ListarPostagem';
@@ -12,6 +11,7 @@ import CarouselComponent from '../../components/carousel/CarouselComponent';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ModalTemas from '../../components/temas/modalTemas/ModalTemas';
 import ListarNoticia from '../../components/noticias/ListarNoticia';
+import './Home.css';
 
 function Home() {
     return (
@@ -39,8 +39,6 @@ function Home() {
                             <Box>
                                 <ModalTemas />
                             </Box>
-
-
                         </Box>
                     </Box>
                 </Grid>
