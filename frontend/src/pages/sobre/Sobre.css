@@ -26,14 +26,14 @@ body {
     padding-right: 5%;
 }
 
-.bottomSobre {
+.bottomSobre { /* parte debaixo da pagina */
     background-color: rgb(255, 255, 255);
     justify-content: center;
     padding: 2%;
     transition: width 2s;
 }
 
-.imgPessoal {
+.imgPessoal { /* Box das fotos dos integrantes */
     align-items: flex-end;
     display: flex;
     justify-content: flex-end;
@@ -42,13 +42,13 @@ body {
     transition: width 2s;
 }
 
-.imgPessoal2 {
+.imgPessoal2 { /* fotos dos integrantes */
     border-radius: 5%;
     width: 70%;
     margin-top: 10%;
 }
 
-.txtPessoal {
+.txtPessoal { /* Texto pitch dos integrantes */
     display: flex;
     justify-content: end;
     align-items: center;
@@ -59,8 +59,7 @@ body {
     font-size: 20px;
 }
 
-.botaoLinks {
-    /*Box com texto e botão das fotos*/
+.botaoLinks { /*Box com texto e botão das fotos*/
     display: flex;
     justify-content: center;
     padding-left: 27%;
