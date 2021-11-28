@@ -17,7 +17,6 @@ import './ListarNoticia.css';
 
 function ListarNoticia() {
     const [list, setNoticias] = useState<Noticias[]>([])
-
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
     );
@@ -37,18 +36,18 @@ function ListarNoticia() {
                 progress: undefined,
             })
             history.push("/login")
-
         }
     }, [token])
 
     async function getNoticia() {
         await buscaGoogle("", setNoticias)
     }
+    
     const Img = styled('img')({
         margin: 'auto',
         display: 'block',
-        maxWidth: '100%',
-        maxHeight: '100%',
+        width: '100%',
+        height: '100%',
     });
 
     useEffect(() => {
@@ -70,7 +69,6 @@ function ListarNoticia() {
                                         <a href={noticia.url} target="_blank" ><Img alt={noticia.title} src={noticia.urlToImage} title={noticia.title} /></a>
                                     </ButtonBase>
                                 </Box>
-
                             </Grid>
                         </Grid>
                     </Box>

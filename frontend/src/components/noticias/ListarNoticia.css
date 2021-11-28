@@ -24,7 +24,6 @@
     color: black;
 }
 
-
 .left-event{
     border-radius: 12%;
     height: 65px;
@@ -56,6 +55,12 @@
 .event p{
     font-size: 12px;
 } 
+
+.sidebar-ads{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
 
 .input{
     border: none;

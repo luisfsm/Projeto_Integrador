@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Grid, Button, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-import './Home.css';
 import HealingSharpIcon from '@mui/icons-material/HealingSharp';
 import CadastroPostagem from '../../components/postagens/cadastroPostagem/CadastroPostagem';
 import ListarPostagem from '../../components/postagens/listarPostagem/ListarPostagem';
@@ -12,11 +11,12 @@ import CarouselComponent from '../../components/carousel/CarouselComponent';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ModalTemas from '../../components/temas/modalTemas/ModalTemas';
 import ListarNoticia from '../../components/noticias/ListarNoticia';
+import './Home.css';
 
 function Home() {
     return (
         <>
-            <Grid container className='bodyHome'>
+            <Grid container className='bodyHome body'>
                 <Grid item xs={2}>
                     <Box className="leftBar">
                         <Box  alignItems="center" position="fixed">
@@ -40,6 +40,13 @@ function Home() {
                                 <ModalTemas />
                             </Box>
 
+                            <Link to="/sobre" className="text-decorator-none">
+                                <Box>
+                                    <Typography className="textHome" alignItems="center"><HealingSharpIcon />
+                                        Sobre
+                                    </Typography>
+                                </Box>
+                            </Link>
 
                         </Box>
                     </Box>
@@ -115,7 +122,7 @@ function Home() {
                                 <a href="#">Veja Tudo</a>
                             </div>
                         </div>
-                       <ListarNoticia />
+                        <ListarNoticia />
                     </Box>
                 </Grid>
             </Grid>

@@ -4,11 +4,13 @@
 }
 
 .logo{
+    margin-left: 25%;
     margin-top: 0%;
 }
 
-.search{
-    margin-right: 5% !important;
+.textLogin{
+    text-decoration: none;
+    color: white;
 }
 
 .div {

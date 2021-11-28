@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background: rgb(218, 218, 218) !important;
     background-repeat: no-repeat !important;
@@ -15,16 +14,16 @@ body{
 
 .leftBar{
     width: 90%;
-    height: 77%;
+    height: 57%;
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    margin-left: 10%;
     position: sticky;
     top: 80px;
     background: #fff;
     padding: 10px;
     border-radius: 4px;
-    background: rgb(218, 218, 218) !important;
+    background: rgb(255, 255, 255) !important;
     background-repeat: no-repeat !important;
 }
 
@@ -79,8 +78,6 @@ body{
     margin-bottom: 20px;
 }
 
-
-
 .right-event h5{
     color: black;
     font-weight: 600;
@@ -100,7 +97,6 @@ body{
 .right-event a:hover{
     color: black;
 }
-
 
 .left-event{
     border-radius: 12%;
@@ -127,23 +123,17 @@ body{
 
 .left-event h5{
     color: black;
-    margin-left: 19px;
+    margin-left: 4px !important;
 }
-
-.left-event h5{
-    color: black;
-    margin-left: 19px;
-}
-
 
 .event p{
     font-size: 12px;
 } 
 
-
 .textHome{
-    margin-top: 20% !important;
-    padding-left: 15%;
+    padding-bottom: 2%;
+    margin-top: 10% !important;
+    padding-left: 10%;
     font-size: 20px !important;
     color: black;
 }
@@ -172,9 +162,8 @@ body{
 }
 
 .logoTop{
-    margin-top: 5%;
-    width: 17%;
-    max-width: 441px;
+    margin-top: 5% !important;
+    width: 12%;
 }
 
 .textSizeHome {
