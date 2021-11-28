@@ -38,15 +38,17 @@ function Donate() {
                 </Grid>
 
                 <Grid item xs={6}>
-                    <img src="https://www.correio24horas.com.br/fileadmin/_processed_/c/3/csm_24102018_baz_sommelier_de_aguas_cred_divulgacao_shutterstock_1_aff62af31d.jpg" alt="" width="750px" className="imgStyle" />
+                    <img src="https://www.correio24horas.com.br/fileadmin/_processed_/c/3/csm_24102018_baz_sommelier_de_aguas_cred_divulgacao_shutterstock_1_aff62af31d.jpg" alt="" width="90%" className="imgStyle paddingImg" />
                 </Grid>
             </Grid>
 
             <Grid container xs={12} direction="row" justifyContent="center" alignItems="center">
                 <Grid item xs={6}>
-                    <img src="https://www.correio24horas.com.br/fileadmin/_processed_/c/3/csm_24102018_baz_sommelier_de_aguas_cred_divulgacao_shutterstock_1_aff62af31d.jpg" alt="" width="750px" className="imgStyle" />
+                    <Box className="paddingImg">
+                        <img src="https://www.correio24horas.com.br/fileadmin/_processed_/c/3/csm_24102018_baz_sommelier_de_aguas_cred_divulgacao_shutterstock_1_aff62af31d.jpg" alt="" width="90%" className="paddingImg" />
+                        </Box>
                 </Grid>
-                
+
                 <Grid item xs={6}>
                     <Box>
                         <p className="aboutFont">Pensando nisso, um dos nossos objetivos é ajudar a comunidade, e por meio de doações, distribuir água potável. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis recusandae ad maxime odit, qui ratione alias autem cupiditate quibusdam eiciendis recusandae ad maxime odit, qui ratione alias autem cupiditate quibusdam porro suscipit aperiam dicta officia necessitatibus mollitia vel eum distinctio</p>

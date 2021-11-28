@@ -52,6 +52,7 @@ function ListaTema() {
 
   return (
     <>
+    <Grid container className="body" justifyContent="center">
       <Box marginTop={12}>
         {
 
@@ -84,7 +85,7 @@ function ListaTema() {
         }
 
       </Box>
-
+    </Grid>
     </>
   );
 }

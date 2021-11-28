@@ -16,7 +16,7 @@ import './Home.css';
 function Home() {
     return (
         <>
-            <Grid container className='bodyHome'>
+            <Grid container className='bodyHome body'>
                 <Grid item xs={2}>
                     <Box className="leftBar">
                         <Box className="logoTop" alignItems="center" position="fixed">

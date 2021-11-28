@@ -7,7 +7,7 @@ function sobre() {
     return (
         <>
 
-            <Grid xs={12} container >   {/* Texto sobre acima */}
+            <Grid xs={12} container>   {/* Texto sobre acima */}
                 <Grid className='topSobre'>
                     <Typography variant="h3" component="h3" className='titulo'>Sobre nós</Typography>
 
