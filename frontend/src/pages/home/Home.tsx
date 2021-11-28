@@ -11,6 +11,7 @@ import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import CarouselComponent from '../../components/carousel/CarouselComponent';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ModalTemas from '../../components/temas/modalTemas/ModalTemas';
+import ListarNoticia from '../../components/noticias/ListarNoticia';
 
 function Home() {
     return (
@@ -107,8 +108,14 @@ function Home() {
                                     </a>
                                 </div>
                             </div>
-
                         </div>
+                        <div className="rightBarTitle">
+                            <h4>Noticias</h4>
+                            <div className="rightBarFTitle">
+                                <a href="#">Veja Tudo</a>
+                            </div>
+                        </div>
+                       <ListarNoticia />
                     </Box>
                 </Grid>
             </Grid>
