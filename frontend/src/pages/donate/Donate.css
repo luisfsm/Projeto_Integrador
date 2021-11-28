@@ -34,9 +34,14 @@
 }
 
 .aboutFont {
+    margin: 10%;
     font-size: 30px !important;
-    font-weight: bold !important;
+    font-weight: 500;
     padding: 20px !important;
     color: black !important;
-    text-align: center !important;
+    justify-content: flex-start;
+}
+
+.imgStyle{
+    border-radius: 5px;
 }
