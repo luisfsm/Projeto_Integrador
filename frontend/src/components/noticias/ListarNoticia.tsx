@@ -44,7 +44,12 @@ function ListarNoticia() {
     async function getNoticia() {
         await buscaGoogle("", setNoticias)
     }
-
+    const Img = styled('img')({
+        margin: 'auto',
+        display: 'block',
+        maxWidth: '100%',
+        maxHeight: '100%',
+    });
 
     useEffect(() => {
         getNoticia()
@@ -56,33 +61,21 @@ function ListarNoticia() {
     return (
         <>
             {
-
-
                 lists.map((noticia, i) => (
-
-
-                    <Box >
-                        <div className="event">
-                            <a href={noticia.url} target="_blank" className="text-decorator-none">
-                                <img alt={noticia.title} src={noticia.urlToImage} height={50} />
-                            </a>
-                            <div >
-                                <Box marginLeft={2}>
-                                    <Typography style={{ wordWrap: 'break-word', height: "50px" }} >
-                                        {noticia.title}
-                                    </Typography>
+                    <Box marginTop={1} margin={1} display="flex" justifyContent="center" >
+                        <Grid container >
+                            <Grid item alignItems='center'>
+                                <Box>
+                                    <ButtonBase>
+                                        <a href={noticia.url} target="_blank" ><Img alt={noticia.title} src={noticia.urlToImage} title={noticia.title} /></a>
+                                    </ButtonBase>
                                 </Box>
 
-                            </div>
-                        </div>
-
-
+                            </Grid>
+                        </Grid>
                     </Box>
-
                 ))
             }
-
-
         </>)
 }
 
