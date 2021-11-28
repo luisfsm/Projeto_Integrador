@@ -17,6 +17,7 @@ import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPosta
 import { Provider } from 'react-redux';
 import store from './store/store';
 import Navbar from './components/estaticos/navbar/Navbar';
+import ModalTemas from './components/temas/modalTemas/ModalTemas';
 
 
 
@@ -69,7 +70,7 @@ function App() {
             </Route>
 
             <Route exact path='/formularioTema'>
-              <CadastroTema />
+              <ModalTemas />
             </Route>
 
             <Route exact path='/formularioTema/:id'>

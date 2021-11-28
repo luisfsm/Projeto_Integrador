@@ -10,11 +10,12 @@ import PaidIcon from '@mui/icons-material/Paid';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import CarouselComponent from '../../components/carousel/CarouselComponent';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import ModalTemas from '../../components/temas/modalTemas/ModalTemas';
 
 function Home() {
     return (
         <>
-            <Grid container>
+            <Grid container className='bodyHome'>
                 <Grid item xs={2}>
                     <Box className="leftBar">
                         <Box className="logoTop" alignItems="center" position="fixed">
@@ -34,11 +35,10 @@ function Home() {
                                 <Typography className="textHome" alignItems="center"><HealingSharpIcon /> Postagens</Typography>
                             </Box>
 
-                            <Link to="/formularioTema" className="text-decorator-none">
-                                <Box>
-                                    <Typography className="textHome" alignItems="center"><HealingSharpIcon /> Novo Tema</Typography>
-                                </Box>
-                            </Link>
+                            <Box>
+                                <ModalTemas />
+                            </Box>
+
 
                         </Box>
                     </Box>

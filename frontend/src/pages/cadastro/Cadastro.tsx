@@ -86,7 +86,8 @@ function Cadastro() {
                     theme: "colored",
                     progress: undefined,
                 })
-                //history.push("/home")
+
+                history.push("/login")
             } else {
                 toast.error("Dados inconsistentes. Favor verificar as informações de cadastro.", {
                     position: "top-right",
