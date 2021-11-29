@@ -21,70 +21,50 @@ function Footer() {
     if (token !== "") {
 
         footerComponent =
-        <footer>
-            <Box
-                px={{ xs: 3, sm: 10 }}
-                py={{ xs: 5, sm: 10 }}
-                bgcolor="text.secondary"
-                color="white" className="footerTamanho"
-            >
-                <Container maxWidth="lg">
-                    <Grid container spacing={5}>
-                        <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>
-                                Ajuda
-                            </Box>
-                            <Box>
-                                <Link href="#" color="inherit" to={'#'} className='text-decorator-none' style={{ color: "white" }}>
-                                    Contato
-                                </Link>
-                            </Box>
-                            <Link href="#" color="inherit" to={'#'} className='text-decorator-none' style={{ color: "white" }}>
-                                <Box>
-                                    Suporte
-                                </Box>
-                            </Link>
-                        </Grid>
+            <footer>
+                <Box
+                    px={{ xs: 3, sm: 10 }}
+                    py={{ xs: 5, sm: 10 }}
+                    bgcolor="text.secondary"
+                    color="white" className="footerTamanho"
+                >
+                    <Container maxWidth="lg">
+                        <Grid container spacing={5}>
+                            <Grid item xs={12} sm={4}>
 
-                        <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>
-                                Contas
-                            </Box>
-                            <Box>
-                                <Link href="#" color="inherit" to={'#'} className='text-decorator-none' style={{ color: "white" }}>
-                                    Login
-                                </Link>
-                            </Box>
-                            <Link href="#" color="inherit" to={'#'} className='text-decorator-none' style={{ color: "white" }}>
-                                <Box>
-                                    Registro
-                                </Box>
-                            </Link>
-                        </Grid>
+                            </Grid>
 
-                        <Grid item xs={12} sm={4}>
-                            <Box borderBottom={1}>
-                                Mensagens
-                            </Box>
-                            <Box>
-                                <Link href="#" color="inherit" to={'#'} className='text-decorator-none' style={{ color: "white" }}>
-                                    Backup
-                                </Link>
-                            </Box>
-                            <Link href="#" color="inherit" to={'#'} className='text-decorator-none' style={{ color: "white" }}>
-                                <Box>
-                                    Historico
+                            <Grid item xs={12} sm={4}>
+                                <Box borderBottom={1}>
+                                    Ajuda
                                 </Box>
-                            </Link>
+                                <Box className="footerTexto">
+                                    <p className='text-decorator-none' style={{ color: "white" }}>
+                                        Contato:
+                                        projetohaqua@gmail.com
+                                    </p>
+                                </Box>
+                                <Link color="inherit" to={'/sobre'} className='text-decorator-none' style={{ color: "white" }}>
+                                    <Box className="footerTexto">
+                                        Sobre-nós
+                                    </Box>
+                                </Link>
+                                <Box className="footerTexto">
+                                    Github
+                                </Box>
+                            </Grid>
+
+                            <Grid item xs={12} sm={4}>
+
+                            </Grid>
                         </Grid>
-                    </Grid>
-                    <Box textAlign="center" pt={{ xs: 5, sm: 10 }}
-                        pb={{ xs: 5, sm: 0 }}>
-                        Projeto Haqua &copy; {new Date().getFullYear()}
-                    </Box>
-                </Container>
-            </Box>
-        </footer>
+                        <Box textAlign="center" pt={{ xs: 5, sm: 10 }}
+                            pb={{ xs: 5, sm: 0 }}>
+                            Projeto Haqua &copy; {new Date().getFullYear()}
+                        </Box>
+                    </Container>
+                </Box>
+            </footer>
 
     }
 

@@ -2,6 +2,10 @@
     padding: 20px in !important;
 }
 
+.footerTexto{
+    margin-top: 2px;
+}
+
 footer{
     background: #022A43 !important;
 }
