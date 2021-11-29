@@ -5,6 +5,15 @@
     margin-left: 250px !important;
 }
 
+
+.bodyPostDeletar{
+    background: rgb(219, 219, 219) !important;
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
+}
+
+
 .apagarNao{
     size:small;
     background-color: darkred !important;

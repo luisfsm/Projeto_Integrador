@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
 import './DeletarTema.css';
 import { useHistory, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
@@ -87,38 +87,39 @@ function DeletarTema() {
 
   return (
     <>
-      <Box marginTop={12}>
-
-        <Box className="alignItems">
-          <Card variant="outlined" className="backgroundColor" style={{ padding: "0px", width: "500px" }}>
-            <CardContent>
-              <Box justifyContent="center">
-                <Typography color="textSecondary" gutterBottom>
-                  Deseja deletar o Tema:
-                </Typography>
-                <Typography variant="h5" component="h2">
-                  {tema?.descricao}
-                </Typography>
-              </Box>
-            </CardContent>
-
-            <CardActions>
-              <Box display="flex" justifyContent="start" ml={1.0} mb={2} className="cardPadding" >
-                <Box mx={2}>
-                  <Button onClick={sim} variant="contained" className="apagarSim" size='large' >
-                    Sim
-                  </Button>
+      <Grid container className="bodyTemaDeletar" justifyContent='center' >
+        <Box marginTop={12} className="ListTema">
+          <Box className="alignItems">
+            <Card variant="outlined" className="backgroundColor" style={{ padding: "0px", width: "500px" }}>
+              <CardContent>
+                <Box justifyContent="center">
+                  <Typography color="textSecondary" gutterBottom>
+                    Deseja deletar o Tema:
+                  </Typography>
+                  <Typography variant="h5" component="h2">
+                    {tema?.descricao}
+                  </Typography>
                 </Box>
-                <Box>
-                  <Button onClick={nao} variant="contained" size='large' color="secondary" className="apagarNao">
-                    Não
-                  </Button>
+              </CardContent>
+
+              <CardActions>
+                <Box display="flex" justifyContent="start" ml={1.0} mb={2} className="cardPadding" >
+                  <Box mx={2}>
+                    <Button onClick={sim} variant="contained" className="apagarSim" size='large' >
+                      Sim
+                    </Button>
+                  </Box>
+                  <Box>
+                    <Button onClick={nao} variant="contained" size='large' color="secondary" className="apagarNao">
+                      Não
+                    </Button>
+                  </Box>
                 </Box>
-              </Box>
-            </CardActions>
-          </Card>
+              </CardActions>
+            </Card>
+          </Box>
         </Box>
-      </Box>
+      </Grid>
     </>
   );
 }
