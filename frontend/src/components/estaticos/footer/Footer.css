@@ -4,8 +4,17 @@
 
 .footerTexto{
     margin-top: 2px;
+    color: white !important;
 }
 
 footer{
     background: #022A43 !important;
+    
 }
+
+
+.footerTexto:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }

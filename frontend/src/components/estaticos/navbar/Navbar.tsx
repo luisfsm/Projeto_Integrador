@@ -12,6 +12,7 @@ import IconButton from '@mui/material/IconButton';
 import './Navbar.css';
 import PaidIcon from '@mui/icons-material/Paid';
 import HealingSharpIcon from '@mui/icons-material/HealingSharp';
+import PeopleAltSharpIcon from '@mui/icons-material/PeopleAltSharp';
 
 function Navbar() {
 
@@ -62,12 +63,12 @@ function Navbar() {
                         </Typography>
 
                         <Link to="/donate" className="textLogin">              
-                                    <Button color="inherit"><PaidIcon
+                                    <Button color="inherit"><PaidIcon style={{marginRight: "5px"}}
                                     /> Doações</Button>                             
                             </Link>
 
                             <Link to="/sobre" className="textLogin paddingButtonNav">
-                                    <Button color="inherit"><HealingSharpIcon /> Sobre Nós
+                                    <Button color="inherit"><PeopleAltSharpIcon style={{marginRight: "5px"}}/>  Sobre Nós
                                     </Button>
                             </Link>
 

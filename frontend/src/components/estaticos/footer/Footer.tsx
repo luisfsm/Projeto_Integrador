@@ -50,7 +50,7 @@ function Footer() {
                                     </Box>
                                 </Link>
                                 <Box className="footerTexto">
-                                    Github
+                                   <a href="https://github.com/luisfsm/Projeto_Integrador" className='text-decorator-none footerTexto' target="_blank" >Github</a> 
                                 </Box>
                             </Grid>
 

@@ -21,23 +21,8 @@ function Home() {
                 <Grid item xs={2} paddingY={10} paddingX={3}>
                     <Box className="leftBar">
                         <Box alignItems="center">
-
-
-                            <Link to="/sobre" className="text-decorator-none">
-
-                                <Box display="flex">
-                                    <PeopleAltSharpIcon style={{ color: "black", marginLeft: "6px" }} />
-                                    <Typography className="cursor" color="initial" style={{ color: "black", marginLeft: "2px", fontSize: "19px" }}>
-                                        Sobre nós
-                                    </Typography>
-                                </Box>
-
-
-
-                            </Link>
                             <Link to="/temas" className="text-decorator-none">
-
-                                <Box display="flex" marginTop={2}>
+                                <Box display="flex" >
 
                                     <HealingSharpIcon style={{ color: "black", marginLeft: "6px" }} />
                                     <Typography className="cursor" color="initial" style={{ color: "black", marginLeft: "2px", fontSize: "19px" }}>
@@ -49,6 +34,14 @@ function Home() {
                             <Box p={1}  marginTop={2}>
                                 <ModalTemas />
                             </Box>
+                            <Link to="/sobre" className="text-decorator-none">
+                                <Box display="flex" marginTop={2}>
+                                    <PeopleAltSharpIcon style={{ color: "black", marginLeft: "6px" }} />
+                                    <Typography className="cursor" color="initial" style={{ color: "black", marginLeft: "2px", fontSize: "19px" }}>
+                                        Sobre nós
+                                    </Typography>
+                                </Box>
+                            </Link>
                         </Box>
                     </Box>
                 </Grid>
@@ -65,7 +58,7 @@ function Home() {
                     </Box>
                 </Grid>
 
-                <Grid item xs={2} mt={10} paddingY={10} paddingX={1}>
+                <Grid item xs={2} mt={0} paddingY={10} paddingX={1}>
                     <Box alignItems="center" className="rightBar">
                         <div className="rightBarTitle">
                             <h4>Eventos</h4>
@@ -119,7 +112,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="rightBarTitle">
-                            <h4>Anúncio</h4>
+                            <h5>Anúncio</h5>
                             <div className="rightBarFTitle">
                                 <a href="#">Veja Tudo</a>
                             </div>
