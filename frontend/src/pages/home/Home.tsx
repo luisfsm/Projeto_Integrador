@@ -17,33 +17,32 @@ function Home() {
     return (
         <>
             <Grid container className='bodyHome body'>
-                <Grid item xs={2}>
+                <Grid item xs={2} >
                     <Box className="leftBar">
                         <Box  alignItems="center" position="fixed">
 
                             <Link to="/temas" className="text-decorator-none">
                                 <Box>
-                                    <Typography className="textHome" alignItems="center"><HealingSharpIcon /> Temas</Typography>
+                                    <Typography className="cursor" variant="h6" alignItems="center" style={{color: "black"}} p={1}><HealingSharpIcon /> Temas</Typography>
                                 </Box>
                             </Link>
 
                             <Box>
-                                <Typography className="textHome" alignItems="center"><PaidIcon
+                                <Typography className="cursor" variant="h6" alignItems="center" p={1}><PaidIcon
                                 /> Donate</Typography>
                             </Box>
 
                             <Box>
-                                <Typography className="textHome" alignItems="center"><HealingSharpIcon /> Postagens</Typography>
+                                <Typography className="cursor" alignItems="center" variant="h6" p={1}><HealingSharpIcon /> Postagens</Typography>
                             </Box>
 
-                            <Box>
-                                <ModalTemas />
+                            <Box p={1}>
+                                <ModalTemas  />
                             </Box>
 
                             <Link to="/sobre" className="text-decorator-none">
-                                <Box>
-                                    <Typography className="textHome" alignItems="center"><HealingSharpIcon />
-                                        Sobre
+                                <Box display="inline">
+                                    <Typography className="cursor" variant="h6" style={{color: "black", marginLeft: "1px"}} alignItems="center" p={1}><HealingSharpIcon /> Sobre
                                     </Typography>
                                 </Box>
                             </Link>

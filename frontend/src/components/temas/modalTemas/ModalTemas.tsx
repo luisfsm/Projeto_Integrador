@@ -5,7 +5,7 @@ import { Button, Box, TextField, Typography } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
 import CadastroTema from '../cadastroTema/CadastroTema';
 import HealingSharpIcon from '@mui/icons-material/HealingSharp';
-import './ModalTemas'
+import './ModalTemas.css'
 
 
 function getModalStyle() {
@@ -59,7 +59,7 @@ function ModalTemas() {
         return (
             <>
 
-                 <Typography  className="textHome cursor" color="initial"  onClick={handleOpen} style={{color: "black"}}>
+                 <Typography  className="cursor" variant="h6" color="initial"  onClick={handleOpen} style={{color: "black"}}>
                     <HealingSharpIcon className="iconHome" /> Novo Tema
                  </Typography>
 

@@ -84,6 +84,7 @@ function App() {
             <Route exact path='/sobre'>
               <Sobre />
             </Route>
+          
 
             <Route path="/deletarPostagem/:id">
               <DeletarPostagem />
