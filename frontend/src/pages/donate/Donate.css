@@ -60,6 +60,7 @@
 }
 
 .aboutFont {
+    font-family: 'Nunito', sans-serif;
     margin: 10%;
     font-size: 30px !important;
     font-weight: 500;
@@ -69,11 +70,12 @@
 }
 
 .imgStyle{
-    border-radius: 5px;
+    border-radius: 5%;
 }
 
 .backGroundDonate1 {
     background-color: rgb(235, 235, 235) !important;
+    border-radius: 1%;
 }
 
 .backGroundDonate2 {
@@ -91,4 +93,18 @@
     text-align: center !important;
     font-size: 20px !important;
     margin-top: 20px !important;
+}
+
+.cardBorder{
+    border-radius: 5%;
+}
+
+.buttonImg{
+    margin-top: 5%;
+    margin-left: 38%;
+}
+
+.buttomColor{
+    color: white !important;
+    background-color: rgb(43, 78, 100) !important;
 }

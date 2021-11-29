@@ -140,7 +140,7 @@ function Cadastro() {
                             <Box marginTop={2} textAlign='center'>
 
                                 <Link to="/login" className='text-decorator-none'>
-                                    <Button type='submit' className='text-decorator-none margin-right-cadastro' variant='contained' color='secondary'>
+                                    <Button type='submit' className='text-decorator-none margin-right-cadastro' variant='contained' color='primary'>
                                         Cancelar
                                     </Button>
                                 </Link>

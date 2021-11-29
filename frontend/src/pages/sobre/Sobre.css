@@ -1,5 +1,4 @@
 .topSobre {
-    margin-top: 2%;
     padding: 7%;
     text-align: justify !important;
     justify-content: center !important;
@@ -8,10 +7,13 @@
 
 .titulo {
     text-align: center;
-    font-family: 'Convergence', sans-serif;
-    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif !important;
+    color: rgb(219, 219, 219);
     padding-bottom: 2%;
     justify-content: center !important;
+    font-size: 50px !important;
+    font-style: italic !important;
+    font-weight: 600 !important;
 }
 
 .txtPrincipal {
@@ -28,13 +30,14 @@
     justify-content: center;
     padding: 2%;
     transition: width 2s;
+    padding: 5%;
 }
 
 .imgPessoal {
     /* Box das fotos dos integrantes */
-    align-items: flex-end;
+    align-items: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding-right: 2%;
     padding-bottom: 4%;
     transition: width 2s;
@@ -50,20 +53,18 @@
 .txtPessoal {
     /* Texto pitch dos integrantes */
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    padding-left: 3%;
-    padding-left: 5%;
-    color: rgb(52, 59, 150);
-    font-weight: bold !important;
+    font-weight: 600 !important;
     font-size: 20px;
+    padding-bottom: 2%;
+    border-radius: 15px;
 }
 
 .botaoLinks {
     /*Box com texto e botão das fotos*/
     display: flex;
     justify-content: center;
-    padding-left: 27%;
     size: small;
     padding-bottom: 10%;
 }
@@ -78,4 +79,63 @@
     size: small;
     background-color: rgb(49, 45, 45) !important;
     color: white !important;
+}
+
+.Mvv {
+    background-color: rgb(229, 238, 238);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgMv {
+    /* Box de fotos dos integrantes */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+}
+
+.imgMvv {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2%;
+}
+
+.imgMvv2 {
+    /* fotos dos integrantes */
+    width: 60%;
+    display: flex;
+    justify-items: center;
+}
+
+.imgMvv3 {
+    /* fotos dos integrantes */
+    width: 60%;
+    display: flex;
+    justify-items: flex-end;
+}
+
+.txtMvv {
+    /* Texto de Missão, visão e valores.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(61, 61, 61);
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Mvv2 {
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.txtPessoal2 {
+    justify-content: center;
+    /* margin-left: 18%; */
+    color: rgb(36, 36, 36);
+    text-align: center !important;
+    border-radius: 13px;
 }
