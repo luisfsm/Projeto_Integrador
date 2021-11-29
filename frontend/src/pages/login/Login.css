@@ -1,6 +1,8 @@
-body{
+.bodyLogin{
   background: #022A43 !important;
-  background-repeat: no-repeat ;
+  width: 100vh;
+  height: 100vh;
+
 }
 
 .haquaLogoHome{

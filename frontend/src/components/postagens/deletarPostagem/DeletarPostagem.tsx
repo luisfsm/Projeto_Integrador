@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Typography, Button, Box, Card, CardActions, CardContent } from "@material-ui/core"
+import { Typography, Button, Box, Card, CardActions, CardContent, Grid } from "@material-ui/core"
 import './DeletarPostagem.css';
 import { useHistory, useParams } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
@@ -74,37 +74,39 @@ function DeletarPostagem() {
 
     return (
         <>
-            <Box marginTop={12}>
-                <Box className="alignItems">
-                    <Card variant="outlined" >
-                        <CardContent>
-                            <Box justifyContent="center">
-                                <Typography color="textSecondary" gutterBottom>
-                                    Deseja deletar a postagem:
-                                </Typography>
-                                <Typography variant="h5" component="h2" >
-                                    {post?.titulo}
-                                </Typography>
-                            </Box>
-                        </CardContent>
+            <Grid container className="bodyTemaDeletar" justifyContent='center' >
+                <Box marginTop={12}>
+                    <Box className="alignItems">
+                        <Card variant="outlined" >
+                            <CardContent>
+                                <Box justifyContent="center">
+                                    <Typography color="textSecondary" gutterBottom>
+                                        Deseja deletar a postagem:
+                                    </Typography>
+                                    <Typography variant="h5" component="h2" >
+                                        {post?.titulo}
+                                    </Typography>
+                                </Box>
+                            </CardContent>
 
-                        <CardActions>
-                            <Box display="flex" justifyContent="start" ml={1.0} mb={2} className="cardPadding" >
-                                <Box mx={2}>
-                                    <Button onClick={sim} variant="contained" className="apagarSim" size='large' >
-                                        Sim
-                                    </Button>
+                            <CardActions>
+                                <Box display="flex" justifyContent="start" ml={1.0} mb={2} className="cardPadding" >
+                                    <Box mx={2}>
+                                        <Button onClick={sim} variant="contained" className="apagarSim" size='large' >
+                                            Sim
+                                        </Button>
+                                    </Box>
+                                    <Box>
+                                        <Button onClick={nao} variant="contained" size='large' color="secondary" className="apagarNao">
+                                            Não
+                                        </Button>
+                                    </Box>
                                 </Box>
-                                <Box>
-                                    <Button onClick={nao} variant="contained" size='large' color="secondary" className="apagarNao">
-                                        Não
-                                    </Button>
-                                </Box>
-                            </Box>
-                        </CardActions>
-                    </Card>
+                            </CardActions>
+                        </Card>
+                    </Box>
                 </Box>
-            </Box>
+            </Grid>
         </>
     );
 }

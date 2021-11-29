@@ -10,6 +10,8 @@ import { toast } from 'react-toastify';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import './Navbar.css';
+import PaidIcon from '@mui/icons-material/Paid';
+import HealingSharpIcon from '@mui/icons-material/HealingSharp';
 
 function Navbar() {
 
@@ -58,6 +60,17 @@ function Navbar() {
                         </Link>
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         </Typography>
+
+                        <Link to="/donate" className="textLogin">              
+                                    <Button color="inherit"><PaidIcon
+                                    /> Doações</Button>                             
+                            </Link>
+
+                            <Link to="/sobre" className="textLogin paddingButtonNav">
+                                    <Button color="inherit"><HealingSharpIcon /> Sobre Nós
+                                    </Button>
+                            </Link>
+
                         <Link to="/login" className="textLogin">
                             <Button color="inherit" onClick={goLogout}>
                                 Logout

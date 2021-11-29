@@ -2,13 +2,21 @@
     text-decoration: none;
 }
 
+.bodyTemaDeletar{
+    background: rgb(219, 219, 219) !important;
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
+}
+
+
 .btnTema{
     background-color: #3a5668;
     color: azure;
 }
 
 .ListTema{
-    background-color: #0a3753 ;
+    background: rgb(218, 218, 218) !important;
 }
 
 .idTema{

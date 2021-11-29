@@ -80,3 +80,15 @@
     background-color: rgb(218, 218, 218) !important;
 }
 
+.box1donate {
+    margin-top: 80px !important;
+    margin-bottom: 10px !important;
+}
+
+.textDonate {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    margin-top: 20px !important;
+}

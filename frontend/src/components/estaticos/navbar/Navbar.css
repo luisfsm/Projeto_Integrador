@@ -19,6 +19,10 @@
     border-color: #98C7E4;
 }
 
+.paddingButtonNav {
+    margin-right: 450px !important;
+}
+
 /* Aba Responsividade, Dimension base Moto G4 (360px) x (640px) / 100% Vh */
 
 @media (max-width: 360px){
