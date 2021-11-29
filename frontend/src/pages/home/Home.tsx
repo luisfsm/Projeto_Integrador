@@ -53,9 +53,10 @@ function Home() {
 
                 <Grid item xs={8} justifyContent="center">
                     <Box paddingY={10}>
-                        <Box paddingX={25} paddingY={1} className="marginLeftModal">
+                        <Box paddingX={10} paddingY={1} className="marginLeftModal">
                             <ModalPostagem />
                         </Box>
+
                         <Box className="listPostPadding" >
                             <ListarPostagem />
                         </Box>
