@@ -74,7 +74,7 @@ function DeletarPostagem() {
 
     return (
         <>
-            <Grid container className="bodyPostDeletar" justifyContent='center' >
+            <Grid container className="bodyTemaDeletar" justifyContent='center' >
                 <Box marginTop={12}>
                     <Box className="alignItems">
                         <Card variant="outlined" >
