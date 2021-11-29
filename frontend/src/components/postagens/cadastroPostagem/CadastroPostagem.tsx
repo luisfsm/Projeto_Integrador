@@ -139,8 +139,7 @@ function CadastroPostagem() {
             <Box>
                 <Container maxWidth="sm" className="topo paddingGeral">
                     <form onSubmit={onSubmit}>
-
-                        <Typography variant="h3" color="textPrimary" component="h1" align="center" className="textColor" >POSTAGEM</Typography>
+                        <Typography variant="h3" color="textPrimary" component="h1" align="center" style={{color: "black"}} >POSTAGEM</Typography>
                         <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Título" variant="outlined" name="titulo" color="primary" margin="normal" fullWidth className="border" />
 
                         <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="Texto" name="texto" variant="outlined" margin="normal" fullWidth className="border" />
