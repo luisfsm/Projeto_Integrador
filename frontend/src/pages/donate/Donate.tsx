@@ -7,23 +7,6 @@ import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 
 
-function CarouselComponent() {
-    const [items, setstate] = useState([
-        { id: 1, title: 'item #1', img: "https://i.imgur.com/NEJtMPr.png" },
-        { id: 2, title: 'item #2', img: "https://i.imgur.com/NEJtMPr.png" },
-        { id: 3, title: 'item #3', img: "https://i.imgur.com/NEJtMPr.png" },
-        { id: 4, title: 'item #4', img: "https://i.imgur.com/NEJtMPr.png" }
-    ])
-    return (
-        <Carousel isRTL={false} autoPlaySpeed={5500}>
-            {items.map(item => <div key={item.id}>
-                <img src={item.img} alt="Iniciativas" width="100%" height="400px" />
-
-            </div>)}
-        </Carousel>
-    )
-}
-
 function underDev() {
     toast.warning("Esse recurso está em desenvolvimento", {
         position: "top-center",
@@ -40,9 +23,19 @@ function underDev() {
 function Donate() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className="backGroundDonate">
-                <Grid alignItems="flex-start" item xs={12} className="backGroundColorTopo">
-                    <CarouselComponent />
+            <Grid container direction="row" justifyContent="center" alignItems="center" className="backGroundColorTopo">
+                <Grid item xs={4} className="box1donate">
+                    <Box >
+                        <img src="https://static.wixstatic.com/media/d8839e_390c718fa9e349ae83c44c0e48a9b4f8~mv2_d_2153_2153_s_2.jpg/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/d8839e_390c718fa9e349ae83c44c0e48a9b4f8~mv2_d_2153_2153_s_2.jpg" alt="ODS 6" width="340px" height="350px" />
+                    </Box>
+                </Grid>
+                <Grid alignItems="flex-start" item xs={6}>
+                    <Box paddingX={6} paddingY={6}>
+                        <p className="textDonate">O ODS 6 visa assegurar a disponibilidade e gestão sustentável da água e saneamento para toda a população.</p>
+                        <p className="textDonate">Até 2030, alguns dos objetivos são:</p>
+                        <p className="textDonate">- Alcançar o acesso universal e equitativo a água potável e segura para todos.</p>   
+                        <p className="textDonate">- Melhorar a qualidade da água, reduzindo a poluição, eliminando despejo e minimizando a liberação de produtos químicos e materiais perigosos.</p> 
+                    </Box>
                 </Grid>
             </Grid>
 

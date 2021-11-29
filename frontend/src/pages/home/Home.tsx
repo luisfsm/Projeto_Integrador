@@ -21,20 +21,6 @@ function Home() {
                     <Box className="leftBar">
                         <Box alignItems="center" position="fixed">
 
-                            <Link to="/donate" className="text-decorator-none">
-                                <Box>
-                                    <Typography className="cursor" variant="h6" alignItems="center" style={{ color: "black" }} p={1}><PaidIcon
-                                    /> Doações</Typography>
-                                </Box>
-                            </Link>
-
-                            <Link to="/sobre" className="text-decorator-none">
-                                <Box display="inline">
-                                    <Typography className="cursor" variant="h6" style={{ color: "black", marginLeft: "1px" }} alignItems="center" p={1}><HealingSharpIcon /> Sobre Nós
-                                    </Typography>
-                                </Box>
-                            </Link>
-
                             <Box>
                                 <Typography className="cursor" alignItems="center" variant="h6" p={1}><HealingSharpIcon /> Postagens</Typography>
                             </Box>
