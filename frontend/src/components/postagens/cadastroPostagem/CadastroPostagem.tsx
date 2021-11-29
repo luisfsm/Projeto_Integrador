@@ -163,7 +163,7 @@ function CadastroPostagem() {
                                 </Select>
 
                             </Box>
-                            <Box className="boxPadding" marginTop={1}>
+                            <Box className="boxPadding" marginTop={1} mb={3}>
                                 <Button type="submit" variant="contained" color="primary">
                                     Postar
                                 </Button>

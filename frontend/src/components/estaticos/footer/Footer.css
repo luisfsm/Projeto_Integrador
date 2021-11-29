@@ -1,3 +1,7 @@
 .footerTamanho{
-    padding: 20px;
+    padding: 20px in !important;
+}
+
+footer{
+    background: #022A43 !important;
 }
