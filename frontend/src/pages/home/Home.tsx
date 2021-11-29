@@ -115,7 +115,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="rightBarTitle">
-                            <h4>Noticias</h4>
+                            <h5 className="rightBarTitlefont">Noticias</h5>
                             <div className="rightBarFTitle">
                                 <a href="#">Veja Tudo</a>
                             </div>

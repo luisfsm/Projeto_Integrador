@@ -26,7 +26,7 @@
 
 .rightBar{
     width: 100%;
-    height: 70%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     top: 100px;
@@ -41,6 +41,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 18px;
+}
+
+.rightBarTitlefont{
+    font-size: 15px;
 }
 
 .rightBarTitle h3{ 

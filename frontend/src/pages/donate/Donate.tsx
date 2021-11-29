@@ -49,7 +49,7 @@ function Donate() {
                         </Grid>
 
                         <Grid item xs={6}>
-                            <img src="https://observatorio3setor.org.br/wp-content/uploads/2017/07/Neg%C3%B3cio-social-reverte-lucro-para-projetos-de-acesso-%C3%A1-%C3%A1gua-pot%C3%A1vel.jpg" alt="" width="90%" className="imgStyle paddingImg" />
+                            <img src="http://www.eosconsultores.com.br/wp-content/uploads/2017/11/falta-de-agua-no-mundo-16.jpg" alt="" width="90%" className="imgStyle paddingImg" />
                         </Grid>
                     </Grid>
 

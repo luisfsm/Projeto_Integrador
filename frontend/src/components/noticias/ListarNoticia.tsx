@@ -15,13 +15,22 @@ import ButtonBase from '@mui/material/ButtonBase';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './ListarNoticia.css';
 
+
+
+
 function ListarNoticia() {
     const [list, setNoticias] = useState<Noticias[]>([])
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
     );
-
+    
+    const arrayNoticias = [1, 2, 7, 8, 0];
+   
+    let numero = arrayNoticias[Math.floor(Math.random() * arrayNoticias.length)];
+    console.log(numero)
     let history = useHistory();
+
+    
 
     useEffect(() => {
         if (token == "") {
@@ -54,9 +63,9 @@ function ListarNoticia() {
         getNoticia()
 
     }, [list.length])
-
-    let lists = list.filter((noticia, i) => i < 1)
-
+    
+    let lists = list.filter((noticia, i) => i ==numero)
+    
     return (
         <>
             {
