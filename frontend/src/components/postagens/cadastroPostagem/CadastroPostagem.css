@@ -6,6 +6,11 @@
     color: rgb(204, 205, 206) !important;
 }
 
+.menuItemSize{
+    width: 200px !important;
+    height: 35px !important;
+}
+
 
 /* Aba Responsividade, Dimension base Moto G4 (360px) x (640px) / 100% Vh */
 
