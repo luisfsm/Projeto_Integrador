@@ -89,11 +89,6 @@ function Donate() {
                 </Box>
             </Grid>
 
-
-
-
-
-
         </>
     )
 }

@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 .backgroundLogin{
   background: #022A43 !important;
+=======
+body{
+  background: #022A43 !important;
+  background-repeat: no-repeat ;
+>>>>>>> 2fccf2aa89f2fe3ed55fcf9eb7bde2c4d4b7b9a4
 }
 
 .haquaLogoHome{
@@ -79,8 +85,11 @@
   line-height: 21px;
 
   color: #98C7E4;
+<<<<<<< HEAD
 }
 
 .bodyLogin{
   background: #022A43;
+=======
+>>>>>>> 2fccf2aa89f2fe3ed55fcf9eb7bde2c4d4b7b9a4
 }

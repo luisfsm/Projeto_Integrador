@@ -2,9 +2,9 @@
     text-decoration: none;
 }
 
-.body{
+.bodyTema{
     background: rgb(219, 219, 219) !important;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat;
 }
 
 .btnTema{

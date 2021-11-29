@@ -67,9 +67,8 @@ function Login() {
     }
 
     return (
-        <>
-            
-            <Grid container xs={12} direction='row' justifyContent='center' alignItems='center' className="bodyLogin"   >
+        <>    
+            <Grid container xs={12} direction='row' justifyContent='center' alignItems='center'>
                 <Grid alignItems='center' xs={4} >
                     <Box display="flex" justifyContent="center" marginTop={6}>
                         <img src="https://i.imgur.com/FpzQD5k.png" className="haquaLogoLogin" alt="" />
