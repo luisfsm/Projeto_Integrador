@@ -1,7 +1,25 @@
 .cardImage {
     border-radius: 500px !important;
-    height: 300px !important;
-    width: 300px !important;
+    height: 200px !important;
+    width: 200px !important;
+    margin-left: 17px !important;
+    margin-top: 30px !important;
+}
+
+.cardImage2 {
+    border-radius: 500px !important;
+    height: 200px !important;
+    width: 200px !important;
+    margin-left: 45px !important;
+    margin-top: 30px !important;
+}
+
+.cardImage3 {
+    border-radius: 500px !important;
+    height: 200px !important;
+    width: 200px !important;
+    margin-left: 30px !important;
+    margin-top: 30px !important;
 }
 
 .titleFont {
@@ -9,12 +27,13 @@
     text-align: center !important;
     font-size: 20px !important;
     padding-top: 5px !important;
+    color: black !important;
 }
 
 .textFont {
     text-align: center !important;
     padding-top: 5px !important;
-    word-break: break-all !important;
+    color: black !important;
 }
 
 .gridPadding {
@@ -24,14 +43,17 @@
 }
 
 .backGroundColorTopo {
-    background-color: rgb(61, 57, 57) !important;
+    background-color: rgb(43, 78, 100) !important;
     padding: 5px !important;
 }
 
 .cardMargin {
-    margin-left: 30px !important;
-    margin-right: 30px !important;
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
+
 
 .paddingImg{
     margin-left: 2% !important;
@@ -49,3 +71,12 @@
 .imgStyle{
     border-radius: 5px;
 }
+
+.backGroundDonate1 {
+    background-color: rgb(235, 235, 235) !important;
+}
+
+.backGroundDonate2 {
+    background-color: rgb(218, 218, 218) !important;
+}
+

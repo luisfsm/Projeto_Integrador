@@ -76,7 +76,7 @@ function Cadastro() {
             if (confirmarSenha == user.senha) {
                 cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
                 dispatch(addToken(token))
-                toast.success("usuario cadastrado com sucesso", {
+                toast.success("Usuário cadastrado com sucesso", {
                     position: "top-right",
                     autoClose: 2000,
                     hideProgressBar: false,

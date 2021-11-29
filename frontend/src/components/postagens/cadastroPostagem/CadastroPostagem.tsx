@@ -148,7 +148,7 @@ function CadastroPostagem() {
                         <FormControl>
                             <Box className="">
                                 <FormHelperText className="textColor">Escolha um tema para a postagem</FormHelperText>
-                                <Select className="border"
+                                <Select className="border menuItemSize"
                                     labelId="demo-simple-select-helper-label"
                                     id="demo-simple-select-helper"
                                     onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {

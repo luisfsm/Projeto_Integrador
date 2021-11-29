@@ -42,7 +42,7 @@ function Login() {
         try {
             await login(`/usuarios/logar`, userLogin, setToken)
 
-            toast.success("usuario logado com sucesso", {
+            toast.success("Usuário logado com sucesso", {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
@@ -53,7 +53,7 @@ function Login() {
                 progress: undefined,
             })
         } catch (error) {
-            toast.error("Dados inconsistentes. erro ao logar.", {
+            toast.error("Erro ao logar- Verifique se usuário e senha estão corretos", {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,

@@ -19,33 +19,37 @@ function Home() {
             <Grid container className='bodyHome bodyHome'>
                 <Grid item xs={2} >
                     <Box className="leftBar">
-                        <Box  alignItems="center" position="fixed">
+                        <Box alignItems="center" position="fixed">
 
-                            <Link to="/temas" className="text-decorator-none">
+                            <Link to="/donate" className="text-decorator-none">
                                 <Box>
-                                    <Typography className="cursor" variant="h6" alignItems="center" style={{color: "black"}} p={1}><HealingSharpIcon /> Temas</Typography>
+                                    <Typography className="cursor" variant="h6" alignItems="center" style={{ color: "black" }} p={1}><PaidIcon
+                                    /> Doações</Typography>
                                 </Box>
                             </Link>
 
-                            <Box>
-                                <Typography className="cursor" variant="h6" alignItems="center" p={1}><PaidIcon
-                                /> Donate</Typography>
-                            </Box>
+                            <Link to="/sobre" className="text-decorator-none">
+                                <Box display="inline">
+                                    <Typography className="cursor" variant="h6" style={{ color: "black", marginLeft: "1px" }} alignItems="center" p={1}><HealingSharpIcon /> Sobre Nós
+                                    </Typography>
+                                </Box>
+                            </Link>
 
                             <Box>
                                 <Typography className="cursor" alignItems="center" variant="h6" p={1}><HealingSharpIcon /> Postagens</Typography>
                             </Box>
 
-                            <Box p={1}>
-                                <ModalTemas  />
-                            </Box>
-
-                            <Link to="/sobre" className="text-decorator-none">
-                                <Box display="inline">
-                                    <Typography className="cursor" variant="h6" style={{color: "black", marginLeft: "1px"}} alignItems="center" p={1}><HealingSharpIcon /> Sobre
-                                    </Typography>
+                            <Link to="/temas" className="text-decorator-none">
+                                <Box>
+                                    <Typography className="cursor" variant="h6" alignItems="center" style={{ color: "black" }} p={1}><HealingSharpIcon /> Temas</Typography>
                                 </Box>
                             </Link>
+
+                            <Box p={1}>
+                                <ModalTemas />
+                            </Box>
+
+
 
                         </Box>
                     </Box>
