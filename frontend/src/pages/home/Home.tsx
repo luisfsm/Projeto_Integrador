@@ -9,6 +9,9 @@ import PaidIcon from '@mui/icons-material/Paid';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ModalTemas from '../../components/temas/modalTemas/ModalTemas';
 import ListarNoticia from '../../components/noticias/ListarNoticia';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import PeopleAltSharpIcon from '@mui/icons-material/PeopleAltSharp';
+import VerticalSplitSharpIcon from '@mui/icons-material/VerticalSplitSharp';
 import './Home.css';
 
 function Home() {
@@ -18,31 +21,32 @@ function Home() {
                 <Grid item xs={2} paddingY={10} paddingX={3}>
                     <Box className="leftBar">
                         <Box alignItems="center">
-                            <Link to="/donate" className="text-decorator-none">
-                                <Box>
-                                    <Typography className="cursor" variant="h6" alignItems="center" style={{ color: "black" }} p={1}><PaidIcon
-                                    /> Doações</Typography>
-                                </Box>
-                            </Link>
+
 
                             <Link to="/sobre" className="text-decorator-none">
-                                <Box display="inline">
-                                    <Typography className="cursor" variant="h6" style={{ color: "black", marginLeft: "1px" }} alignItems="center" p={1}><HealingSharpIcon /> Sobre Nós
+
+                                <Box display="flex">
+                                    <PeopleAltSharpIcon style={{ color: "black", marginLeft: "6px" }} />
+                                    <Typography className="cursor" color="initial" style={{ color: "black", marginLeft: "2px", fontSize: "19px" }}>
+                                        Sobre nós
+                                    </Typography>
+                                </Box>
+
+
+
+                            </Link>
+                            <Link to="/temas" className="text-decorator-none">
+
+                                <Box display="flex" marginTop={2}>
+
+                                    <HealingSharpIcon style={{ color: "black", marginLeft: "6px" }} />
+                                    <Typography className="cursor" color="initial" style={{ color: "black", marginLeft: "2px", fontSize: "19px" }}>
+                                        Temas
                                     </Typography>
                                 </Box>
                             </Link>
 
-                            <Box>
-                                <Typography className="cursor" alignItems="center" variant="h6" p={1}><HealingSharpIcon /> Postagens</Typography>
-                            </Box>
-
-                            <Link to="/temas" className="text-decorator-none">
-                                <Box>
-                                    <Typography className="cursor" variant="h6" alignItems="center" style={{ color: "black" }} p={1}><HealingSharpIcon /> Temas</Typography>
-                                </Box>
-                            </Link>
-
-                            <Box p={1}>
+                            <Box p={1}  marginTop={2}>
                                 <ModalTemas />
                             </Box>
                         </Box>

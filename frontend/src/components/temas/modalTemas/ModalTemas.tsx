@@ -5,6 +5,7 @@ import { Button, Box, TextField, Typography } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
 import CadastroTema from '../cadastroTema/CadastroTema';
 import HealingSharpIcon from '@mui/icons-material/HealingSharp';
+import AddBoxIcon from '@mui/icons-material/AddBox';
 import './ModalTemas.css'
 
 
@@ -56,24 +57,30 @@ function ModalTemas() {
     );
 
 
-        return (
-            <>
-
-                 <Typography  className="cursor" variant="h6" color="initial"  onClick={handleOpen} style={{color: "black"}}>
-                    <HealingSharpIcon className="iconHome" /> Novo Tema
-                 </Typography>
+    return (
+        <>
 
 
-                <Modal
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="simple-modal-title"
-                    aria-describedby="simple-modal-description"
-                >
-                    {body}
-                </Modal>
-            </>
-        )
-    }
+            <Box display="flex">
+                <AddBoxIcon />
+                <Typography className="cursor" color="initial" onClick={handleOpen} style={{ color: "black", marginLeft: "3px", fontSize: "19px" }}>
+                    Novo Tema
+                </Typography>
+            </Box>
 
-    export default ModalTemas;
+
+
+
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+            >
+                {body}
+            </Modal>
+        </>
+    )
+}
+
+export default ModalTemas;
