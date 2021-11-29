@@ -6,8 +6,6 @@ import CadastroPostagem from '../../components/postagens/cadastroPostagem/Cadast
 import ListarPostagem from '../../components/postagens/listarPostagem/ListarPostagem';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import PaidIcon from '@mui/icons-material/Paid';
-import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
-import CarouselComponent from '../../components/carousel/CarouselComponent';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ModalTemas from '../../components/temas/modalTemas/ModalTemas';
 import ListarNoticia from '../../components/noticias/ListarNoticia';
@@ -16,11 +14,10 @@ import './Home.css';
 function Home() {
     return (
         <>
-            <Grid container className='bodyHome bodyHome'>
-                <Grid item xs={2} >
+            <Grid container className='bodyHome'>
+                <Grid item xs={2} paddingY={10} paddingX={3}>
                     <Box className="leftBar">
-                        <Box alignItems="center" position="fixed">
-
+                        <Box alignItems="center">
                             <Link to="/donate" className="text-decorator-none">
                                 <Box>
                                     <Typography className="cursor" variant="h6" alignItems="center" style={{ color: "black" }} p={1}><PaidIcon
@@ -48,9 +45,6 @@ function Home() {
                             <Box p={1}>
                                 <ModalTemas />
                             </Box>
-
-
-
                         </Box>
                     </Box>
                 </Grid>
@@ -66,8 +60,8 @@ function Home() {
                     </Box>
                 </Grid>
 
-                <Grid item xs={2}>
-                    <Box alignItems="center" position="fixed" className="rightBar">
+                <Grid item xs={2} mt={10} paddingY={10} paddingX={1}>
+                    <Box alignItems="center" className="rightBar">
                         <div className="rightBarTitle">
                             <h4>Eventos</h4>
                             <div className="rightBarFTitle">

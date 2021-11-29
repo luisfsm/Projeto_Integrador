@@ -92,6 +92,7 @@ function App() {
 
           </div>
         </Switch>
+        <Footer />
       </Router>
     </Provider>
     

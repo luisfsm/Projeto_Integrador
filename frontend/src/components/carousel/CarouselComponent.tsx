@@ -12,7 +12,7 @@ function CarouselComponent() {
   return (
 <Carousel duration={2500}>
 {items.map(item => <div key={item.id}>
-<img src={item.img} alt="" width="100%" height="300px"/>
+<img src={item.img} alt="" width="100%" height="350px"/>
 
 </div>)}
 </Carousel>
