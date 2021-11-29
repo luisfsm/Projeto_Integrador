@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+.bodyHome{
     background: rgb(218, 218, 218) !important;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat;
 }
 
 .text-decorator-none{

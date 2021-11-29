@@ -1,5 +1,6 @@
-.backgroundLogin{
-  background: hsl(0, 0%, 82%) !important;
+body{
+  background: #022A43 !important;
+  background-repeat: no-repeat ;
 }
 
 .haquaLogoHome{
@@ -79,8 +80,4 @@
   line-height: 21px;
 
   color: #98C7E4;
-}
-
-body{
-  background: #022A43;
 }
