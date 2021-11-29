@@ -18,7 +18,7 @@ function sobre() {
                 </Grid>
             </Grid>
 
-            <Grid xs={12} container className='bottomSobre'> 
+            <Grid xs={12} container className='bottomSobre'>
                 <Grid xs={10} item container className='Mvv'> {/*missão*/}
                     <Grid xs={5} item>
                         <Box className='imgMvv'>
@@ -32,7 +32,7 @@ function sobre() {
                             <Box className='tituloMvv'>
                                 MISSÃO
                             </Box>
-                            Promover soluções de saneamento e conscientização dos usuários sobre a importancia dos ojetivos de Desenvolvimento Sustentável.
+                            Promover soluções de saneamento e conscientizar seus usuários sobre a importancia dos ojetivos de Desenvolvimento Sustentável.
                         </Box>
                     </Grid>
                 </Grid>
@@ -81,10 +81,13 @@ function sobre() {
                     </Grid>
                 </Grid>
 
-               {/* -------------------- */}
+                {/* -------------------- */}
                 <Grid xs={6} item className='txtPessoal'>  {/* Hariel */}
                     <Box className='txtPessoal2'>
-                        ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente vel eligendi quasi eaque consequatur, officia, accusantium nulla perspiciatis esse enim, nostrum beatae dolore optio perferendis itaque molestiae doloribus consectetur.
+                        <Box className='nomeTexto'>
+                            Luiz Hariel
+                        </Box >
+                        Gosto de jogar vídeo games, ler livros e ouvir músicas. Participei de um bootcamp na Generation Brasil, foi lá onde desenvolvi minhas SoftSkills e HardSkills. Quero entregar valor, fazer a diferença no mercado de trabalho como desenvolvedor.
                     </Box>
 
                 </Grid>
@@ -116,7 +119,10 @@ function sobre() {
 
                 <Grid xs={6} item className='txtPessoal'>  {/* Felipe */}
                     <Box className='txtPessoal2'>
-                        ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente vel eligendi quasi eaque consequatur, officia, accusantium nulla perspiciatis esse enim, nostrum beatae dolore optio perferendis itaque molestiae doloribus consectetur.
+                        <Box className='nomeTexto'>
+                            Luiz Felipe
+                        </Box >
+                        Nascido e criado em São paulo de forma específica no Grajaú. Apaixonado por jogos , livros, e tecnologia . Extremamente curioso  e fascínado em aprender coisas novas.
                     </Box>
                 </Grid>
                 <Grid xs={3}>
@@ -139,7 +145,10 @@ function sobre() {
 
                 <Grid xs={6} item className='txtPessoal'>  {/* José */}
                     <Box className='txtPessoal2'>
-                        ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente vel eligendi quasi eaque consequatur, officia, accusantium nulla perspiciatis esse enim, nostrum beatae dolore optio perferendis itaque molestiae doloribus consectetur.
+                        <Box className='nomeTexto'>
+                            José Roberto
+                        </Box >
+                        Sou apaixonado por tecnologia desde minha infância, principalmente devido aos videogames.Tive a oportunidade de atuar na área de tecnologia como agente de suporte técnico, onde iniciei minha jornada na área de programação.
                     </Box>
                 </Grid>
                 <Grid xs={3}>
@@ -161,7 +170,10 @@ function sobre() {
                 {/* -------------------- */}
                 <Grid xs={6} item className='txtPessoal'>  {/* Alan */}
                     <Box className='txtPessoal2'>
-                        ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente vel eligendi quasi eaque consequatur, officia, accusantium nulla perspiciatis esse enim, nostrum beatae dolore optio perferendis itaque molestiae doloribus consectetur.
+                        <Box className='nomeTexto'>
+                            Alan Vilas Boas
+                        </Box >
+                        Grande afinidade com histórias de ficção cientifica. Tenho como filosofia de vida: União, comunicação e trabalho em equipe. Desejo prestar meu serviço com dedicação, empenho e ter meu lugar ao sol como desenvolvedor.
                     </Box>
                 </Grid>
                 <Grid xs={3}>
@@ -180,7 +192,7 @@ function sobre() {
                         </Button>
                     </Box>
                 </Grid>
-                {/* -------------------- */}
+                
 
             </Grid>
         </>
