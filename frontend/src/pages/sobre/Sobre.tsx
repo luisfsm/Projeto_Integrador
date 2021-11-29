@@ -32,7 +32,7 @@ function sobre() {
                             <Box className='tituloMvv'>
                                 MISSÃO
                             </Box>
-                            Promover soluções de saneamento e conscientizar seus usuários sobre a importancia dos ojetivos de Desenvolvimento Sustentável.
+                            Promover soluções de saneamento e conscientização dos usuários sobre a importancia dos ojetivos de Desenvolvimento Sustentável.
                         </Box>
                     </Grid>
                 </Grid>
