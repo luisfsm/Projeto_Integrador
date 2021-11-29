@@ -44,11 +44,7 @@ function Footer() {
                                         projetohaqua@gmail.com
                                     </p>
                                 </Box>
-                                <Link color="inherit" to={'/sobre'} className='text-decorator-none' style={{ color: "white" }}>
-                                    <Box className="footerTexto">
-                                        Sobre-nós
-                                    </Box>
-                                </Link>
+                                
                                 <Box className="footerTexto">
                                    <a href="https://github.com/luisfsm/Projeto_Integrador" className='text-decorator-none footerTexto' target="_blank" >Github</a> 
                                 </Box>
