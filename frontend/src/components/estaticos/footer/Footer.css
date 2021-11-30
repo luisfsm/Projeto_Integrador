@@ -1,4 +1,4 @@
-.footerTamanho{
+:ng-deep.footerTamanho{
     padding: 20px in !important;
 }
 
