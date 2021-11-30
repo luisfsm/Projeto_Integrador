@@ -120,7 +120,7 @@ function sobre() {
                 <Grid xs={6} item className='txtPessoal'>  {/* Felipe */}
                     <Box className='txtPessoal2'>
                         <Box className='nomeTexto'>
-                            Luiz Felipe
+                            Luis Felipe
                         </Box >
                         Nascido e criado em São paulo de forma específica no Grajaú. Apaixonado por jogos , livros, e tecnologia . Extremamente curioso  e fascínado em aprender coisas novas.
                     </Box>
