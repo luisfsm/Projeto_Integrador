@@ -85,7 +85,7 @@ function sobre() {
                 <Grid xs={6} item className='txtPessoal'>  {/* Hariel */}
                     <Box className='txtPessoal2'>
                         <Box className='nomeTexto'>
-                            Luiz Hariel
+                            Luis Hariel
                         </Box >
                         Gosto de jogar vídeo games, ler livros e ouvir músicas. Participei de um bootcamp na Generation Brasil, foi lá onde desenvolvi minhas SoftSkills e HardSkills. Quero entregar valor, fazer a diferença no mercado de trabalho como desenvolvedor.
                     </Box>
@@ -127,7 +127,7 @@ function sobre() {
                 </Grid>
                 <Grid xs={3}>
                     <Box className='imgPessoal'>
-                        <img className='imgPessoal2' src="https://avatars.githubusercontent.com/u/42703204?v=4" alt="foto do Luis Felipe" />
+                        <img className='imgPessoal2' src="https://avatars.githubusercontent.com/u/42703204?v=4" alt="foto do Luiz Felipe" />
                     </Box>
                     <Box className='botaoLinks'>
                         <Button variant='contained' className='botaoLinkedin'
