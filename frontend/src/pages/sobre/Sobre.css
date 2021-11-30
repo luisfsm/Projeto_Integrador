@@ -82,6 +82,7 @@
 }
 
 .Mvv {
+    /* Missão, visão, valores */
     background-color: rgb(229, 238, 238);
     border-radius: 25px;
     display: flex;
@@ -138,4 +139,8 @@
     color: rgb(36, 36, 36);
     text-align: center !important;
     border-radius: 13px;
+}
+
+.nomeTexto {
+    font-weight: 800! important;
 }
