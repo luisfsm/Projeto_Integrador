@@ -85,7 +85,7 @@ function sobre() {
                 <Grid xs={6} item className='txtPessoal'>  {/* Hariel */}
                     <Box className='txtPessoal2'>
                         <Box className='nomeTexto'>
-                            Luiz Hariel
+                            Luis Hariel
                         </Box >
                         Gosto de jogar vídeo games, ler livros e ouvir músicas. Participei de um bootcamp na Generation Brasil, foi lá onde desenvolvi minhas SoftSkills e HardSkills. Quero entregar valor, fazer a diferença no mercado de trabalho como desenvolvedor.
                     </Box>
@@ -120,7 +120,7 @@ function sobre() {
                 <Grid xs={6} item className='txtPessoal'>  {/* Felipe */}
                     <Box className='txtPessoal2'>
                         <Box className='nomeTexto'>
-                            Luiz Felipe
+                            Luis Felipe
                         </Box >
                         Nascido e criado em São paulo de forma específica no Grajaú. Apaixonado por jogos , livros, e tecnologia . Extremamente curioso  e fascínado em aprender coisas novas.
                     </Box>
